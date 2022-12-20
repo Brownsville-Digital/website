@@ -1,0 +1,123 @@
+/* Colors */
+:root {
+  --brand-primary: #3d0000;
+  --brand-secondary: #f3f5d6;
+  --brand-secondary-dark: #0A2134;
+  --black: #010101;
+  --white: #F7F9FB;
+}
+
+body {
+  background: var(--brand-primary);
+  margin: 0;
+}
+
+main {
+  background: #cdc6c6;
+  margin: 0;
+}
+
+header {
+  padding: 1em;
+}
+
+section {
+  margin: 0;
+  padding: 3em;
+}
+
+.site-logo svg {
+  fill: var(--brand-secondary);
+  stroke: var(--brand-secondary);
+  width: 300px;
+  height: auto;
+}
+
+
+/* Hero */
+#hero {
+  background: url(../images/HistoricBrownsville.jpeg) no-repeat center center;
+  color: var(--brand-primary);
+  padding: 4rem 0;
+  text-align: center;
+  height: calc(100vh - 126px);
+}
+
+/* Typography */
+
+
+body {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+/* Nav */
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+nav .menu {
+  background-color: var(--brand-primary);
+}
+
+nav .menu a {
+  color: var(--brand-secondary);
+}
+
+nav .menu a:hover {
+  color: var(--brand-secondary);
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  position: absolute;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.hamburger i {
+  color: var(--brand-secondary);
+  font-size: 2rem;
+}
+
+i.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: -10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: var(--light);
+  color: var(--brand-secondary);
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+nav {
+  width: 100%;
+}
