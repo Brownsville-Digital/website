@@ -36,7 +36,6 @@ section {
 
 /* Hero */
 #hero {
-  background: url(../images/HistoricBrownsville.jpeg) no-repeat center center;
   color: var(--brand-primary);
   padding: 4rem 0;
   text-align: center;
