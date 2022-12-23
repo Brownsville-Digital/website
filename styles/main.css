@@ -42,6 +42,33 @@ section {
   height: calc(100vh - 126px);
 }
 
+/* Toolset */
+#toolset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -1rem;
+}
+
+#toolset .tools {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  border: 1px solid var(--brand-secondary);
+  text-align: center;
+}
+
+#toolset img {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  margin: 0.4em;
+  display: block;
+}
+
 /* Typography */
 
 
