@@ -1,11 +1,16 @@
 ---
 category: hero full-width
 ---
-
+<script>const portfolio = {{ site.data.portfolio | jsonify }};</script>
 <section id="hero">
 
   <h1>Let's Communicate</h1>
 
+</section>
+<section>
+<div class="box green"></div>
+<div class="box orange"></div>
+<div class="box grey"></div>
 </section>
 <section id="toolset">
   <div class=tools markdown=1>
