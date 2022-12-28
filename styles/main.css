@@ -64,23 +64,26 @@ section {
 
 /* SVG Sizing */
 #whatsthestory {
-  width: 60%;
+  height: 1.7em;
 }
 
 #whoneedstohearit {
-  width: 80%;
+  height: 1.5em;
 }
 
-#betyoureadthis {
-  width: 40%;
+#whoneedstohearit path {
+  opacity: 0;
 }
 
+#betyoureadthis,
 #scrolldown {
-  width: 20%;
+  display: none;
 }
 
 #downarrow {
   width: 5%;
+  display: block;
+  margin: auto;
 }
 
 #previouspuzzles {
@@ -119,7 +122,6 @@ section svg path {
   color: var(--brand-primary);
   padding: 4rem 0;
   text-align: center;
-  height: calc(100vh - 126px);
 }
 
 /* Toolset */

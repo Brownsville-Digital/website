@@ -6,6 +6,8 @@ if (portfolio) {
 const tl = gsap.timeline();
 tl.from('#whatsthestory path', {duration: 0.4, stagger: 0.2, fill: "var(--brand-secondary)", opacity: 0, y: "random(-150, 150)", ease: "bounce"});
 tl.to('#whoneedstohearit path', {duration: 0.2, stagger: 0.1, fill: "var(--brand-primary)", opacity: 1, ease: "bounce"});
+tl.from('#downarrow', {duration: 2, fill: "var(--brand-secondary)", opacity: 0, y: "-150", ease: "expo"});
+
 // gsap.to("#themap path, #themap circle", {duration: 1, stagger: 1, opacity: 1});
 tl.from('#budget', {duration: 1, stagger: 0.3, opacity: 0.5, x: "100%", ease: "bounce"});
 

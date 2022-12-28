@@ -4,7 +4,7 @@ category: hero full-width
 <script>const portfolio = {{ site.data.portfolio | jsonify }};</script>
   <section id="hero">
     <h1>Let's Communicate</h1>
-    <svg viewBox="0 0 713 87">
+    <svg  id=whatsthestory viewBox="0 0 713 87">
 
     <title>What's the story?</title>
     <g transform="matrix(1,0,0,1,-69.2692,-21.454)">
