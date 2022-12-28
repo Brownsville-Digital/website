@@ -62,6 +62,55 @@ section {
   height: auto;
 }
 
+/* SVG Sizing */
+#whatsthestory {
+  width: 60%;
+}
+
+#whoneedstohearit {
+  width: 80%;
+}
+
+#betyoureadthis {
+  width: 40%;
+}
+
+#scrolldown {
+  width: 20%;
+}
+
+#downarrow {
+  width: 5%;
+}
+
+#previouspuzzles {
+  width: 50%;
+}
+
+section svg path {
+  stroke: var(--brand-primary);
+  fill: var(--brand-primary);
+}
+
+#roadmap,
+#budget,
+#scope,
+#milestones,
+#userneeds,
+#strategicobjectives,
+#styleguide #branding,
+#previouspuzzles {
+  height: auto;
+}
+
+#previouspuzzles rect {
+  fill: var(--brand-primary);
+}
+
+#themap circle,
+#themap path {
+  opacity: 0;
+}
 
 /* Hero */
 #hero {
