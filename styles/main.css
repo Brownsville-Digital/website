@@ -107,9 +107,11 @@ section svg path {
   fill: var(--brand-primary);
 }
 
-#themap circle,
-#themap path {
-  opacity: 0;
+#themap,
+#roadmap {
+  width: calc(50% - 2em);
+  float: left;
+  margin: 1em;
 }
 
 /* Hero */
