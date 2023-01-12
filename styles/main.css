@@ -232,7 +232,7 @@ i.closeIcon {
   position: fixed;
   transform: translateY(-100%);
   transition: transform 0.2s;
-  top: -10px;
+  top: -50px;
   left: 0;
   right: 0;
   bottom: 0;
