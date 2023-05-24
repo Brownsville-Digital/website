@@ -289,11 +289,25 @@ category: hero full-width
 
   </section>
 
-  <section>
-    <svg id=previouspuzzles viewBox="0 0 875 69">
-
-          <title>previous puzzles</title>
-          <g transform="matrix(1,0,0,1,-25.5131,-1008.71)">
+  <section id=previouspuzzlessection class=hideMe>
+    <svg id="leftArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <g stroke-linejoin="round" stroke-linecap="round" >
+        <circle r="46" cx="50" cy="50" />
+        <polyline points="60 25, 30 50, 60 75" ></polyline>
+      </g>
+    </svg>
+    <svg id="rightArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <g stroke-linejoin="round" stroke-linecap="round" >
+        <circle r="46" cx="50" cy="50" />
+        <polyline points="40 25, 70 50, 40 75" ></polyline>
+      </g>
+    </svg>
+    <div id=slider>
+      <div id=slides>
+        <div class="slide slide1">
+          <svg id=previouspuzzles viewBox="0 0 875 69">
+            <title>previous puzzles</title>
+            <g transform="matrix(1,0,0,1,-25.5131,-1008.71)">
               <g transform="matrix(1,0,0,1,-53.8021,914.578)">
                   <path d="M79.315,160.945L98.899,160.945L98.899,141.361L106.387,141.361C120.403,141.361 130.195,132.337 130.195,118.705C130.195,105.073 120.403,95.665 106.387,95.665L79.315,95.665L79.315,160.945ZM98.899,125.425L98.899,111.985L103.027,111.985C107.923,111.985 110.515,114.481 110.515,118.705C110.515,122.929 107.923,125.425 103.027,125.425L98.899,125.425Z" style="fill-rule:nonzero;"/>
                   <path d="M177.523,136.849C184.627,132.817 189.043,125.905 189.043,117.937C189.043,105.073 179.827,95.665 164.563,95.665L137.203,95.665L137.203,160.945L156.787,160.945L156.787,140.305L159.379,140.305L169.843,160.945L191.827,160.945L191.827,160.657L177.523,136.849ZM161.875,125.233L156.787,125.233L156.787,111.793L161.875,111.793C166.387,111.793 169.267,114.481 169.267,118.417C169.267,122.545 166.387,125.233 161.875,125.233Z" style="fill-rule:nonzero;"/>
@@ -311,8 +325,23 @@ category: hero full-width
                   <path d="M870.259,144.241L870.259,136.369L891.571,136.369L891.571,120.145L870.259,120.145L870.259,112.369L894.931,112.369L894.931,95.665L850.675,95.665L850.675,160.945L895.795,160.945L895.795,144.241L870.259,144.241Z" style="fill-rule:nonzero;"/>
                   <path d="M928.051,162.481C943.027,162.481 954.067,154.321 954.067,141.073C954.067,130.225 946.771,123.793 934.003,119.953C929.203,118.513 924.115,116.785 924.115,114.097C924.115,112.273 926.131,110.929 930.355,110.929C934.579,110.929 938.803,111.985 944.851,115.153L952.723,100.849C944.467,96.049 937.459,94.129 929.491,94.129C915.571,94.129 904.243,101.521 904.243,114.865C904.243,124.369 909.907,132.049 923.059,135.889C929.683,137.809 934.195,139.537 934.195,142.129C934.195,144.529 931.315,145.489 926.995,145.489C921.235,145.489 915.283,143.281 910.003,139.345L901.651,154.225C910.099,159.985 919.219,162.481 928.051,162.481Z" style="fill-rule:nonzero;"/>
               </g>
-          </g>
-      </svg>
+            </g>
+          </svg>
+        </div> <!-- End Slide -->
+        <div class="slide slide2">
+          <h2>I am slide two.</h2>
+        </div> <!-- End Slide -->
+      </div> <!-- End Slides -->
+    </div> <!-- End Slider -->
+    <div class="dots"></div>
+    <div class="titleWrap">
+      <div class="title">
+        1. Controlling the slider
+      </div>
+      <div class="title">
+        2. Powered by GSAP
+      </div>
+    </div>
   </section>
 
 <section markdown=1 class="bg-secondary contact">
