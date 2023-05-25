@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-body {
+section#portfolio {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -24,7 +24,7 @@ body {
   height: 100%;
 }
 
-section {
+#slides section {
   height: 100%;
   display: flex;
   align-content: center;
