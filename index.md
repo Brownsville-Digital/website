@@ -5,7 +5,6 @@ category: hero full-width
   <section id="hero">
     <h1>Let's Communicate</h1>
     <svg  id=whatsthestory viewBox="0 0 713 87">
-
     <title>What's the story?</title>
     <g transform="matrix(1,0,0,1,-69.2692,-21.454)">
         <g transform="matrix(1,0,0,1,-7.358,-70.083)">
@@ -282,9 +281,7 @@ category: hero full-width
   <section id=toolset>
   <h2>Decisions, Decisions</h2>
   <div class=tools markdown=1>
-
   ![php](images/devtools/PHP-logo.svg) ![python](images/devtools/python-powered-w.svg) ![ecmascript](images/devtools/es2015-ecmascript-logo.svg) ![javascript](images/devtools/Unofficial_JavaScript_logo_2.svg) ![HTML5](images/devtools/HTML5_logo_and_wordmark.svg) ![css](images/devtools/CSS3_logo_and_wordmark.svg) ![Django](images/devtools/Django_logo.svg) ![Laravel](images/devtools/Laravel.svg) ![Flask](images/devtools/Flask_logo.svg) ![AWS](images/devtools/Amazon_Web_Services_Logo.svg) ![Node](images/devtools/Node.js_logo.svg) ![React](images/devtools/React-icon.svg) ![webpack](images/devtools/logo-on-white-bg.svg) ![Wordpress](images/devtools/WordPress_logo.svg) ![git](images/devtools/Git-logo.svg) ![sass](images/devtools/Sass_Logo_Color.svg) ![Bootstrap](images/devtools/Bootstrap_logo.svg) ![Tailwind](images/devtools/Tailwind_CSS_Logo.svg) ![FLutter](images/devtools/Google-flutter-logo.svg) ![Ansible](images/devtools/Ansible_logo.svg) ![Mindbody](images/devtools/Mindbody.svg)
-
   </div>
 
   </section>
@@ -328,8 +325,14 @@ category: hero full-width
             </g>
           </svg>
         </div> <!-- End Slide -->
-        <div class="slide slide2">
+        <div class="slide">
           <h2>I am slide two.</h2>
+        </div> <!-- End Slide -->
+        <div class="slide">
+          <h2>I am slide three.</h2>
+        </div> <!-- End Slide -->
+        <div class="slide">
+          <h2>I am slide four.</h2>
         </div> <!-- End Slide -->
       </div> <!-- End Slides -->
     </div> <!-- End Slider -->

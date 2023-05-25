@@ -130,15 +130,14 @@ section svg path {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 -1rem;
 }
 
 #toolset .tools {
-  /* display: flex;
+  display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 95%; */
+  width: 95%;
   border: 1px solid var(--brand-secondary);
   text-align: center;
 }
@@ -252,11 +251,8 @@ nav {
 }
 
 /* SLIDER */
-* {
-  box-sizing: border-box;
-}
 
-body {
+section#previouspuzzlessection {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -264,20 +260,21 @@ body {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
-#masterWrap {
+#previouspuzzlessection #slider {
   width: 100%;
   height: 100%;
   position: absolute;
   overflow: hidden;
 }
 
-#panelWrap {
+#slides {
   height: 100%;
 }
 
-section {
+#previouspuzzlessection #slider section {
   height: 100%;
   display: flex;
   align-content: center;
@@ -289,7 +286,7 @@ section {
   float: left;
 }
 
-.dot {
+#previouspuzzlessection .dot {
   width: 12px;
   height: 12px;
   border-radius: 100%;
@@ -301,22 +298,22 @@ section {
   float: left;
 }
 
-.dots {
+#previouspuzzlessection .dots {
   position: absolute;
   z-index: 100;
   left: 50%;
   bottom: 16px;
 }
 
-#leftArrow {
+#previouspuzzlessection #leftArrow {
   left: 12px;
 }
 
-#rightArrow {
+#previouspuzzlessection #rightArrow {
   right: 12px;
 }
 
-.arrow {
+#previouspuzzlessection .arrow {
   position: absolute;
   z-index: 100;
   top: 50%;
@@ -329,7 +326,7 @@ section {
   fill: transparent;
 }
 
-h1 {
+#previouspuzzlessection h1 {
   position: absolute;
   z-index: 100;
   font-size: 18px;
@@ -338,13 +335,13 @@ h1 {
   text-transform: capitalize;
 }
 
-span {
+#previouspuzzlessection span {
   display: block;
   font-size: 0.75em;
   font-weight: 400;
 }
 
-.titleWrap {
+#previouspuzzlessection .titleWrap {
   height: 30px;
   position: absolute;
   z-index: 20;
@@ -359,17 +356,17 @@ span {
   text-align: center;
 }
 
-h3,
-p {
+#previouspuzzlessection h3,
+#previouspuzzlessection p {
   padding: 0;
   margin: 0;
 }
 
-h3 {
+#previouspuzzlessection h3 {
   font-size: 1.5em;
 }
 
-p {
+#previouspuzzlessection #previouspuzzlessection p {
   max-width: 400px;
   font-weight: 400;
   text-align: center;
@@ -419,11 +416,11 @@ p {
 }
 
 @media (max-width: 480px) {
-  section img {
+  section#previouspuzzlessection img {
     max-width: 200px;
   }
 
-  p {
+  #previouspuzzlessection p {
     max-width: 180px;
   }
 }
