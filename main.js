@@ -145,7 +145,7 @@ function slideAnim(e) {
       activeSlide = this.index;
       // scrollwheel
     } else {
-      activeSlide = e.deltaY > 0 ? (activeSlide += 1) : (activeSlide -= 1);
+      // activeSlide = e.deltaY > 0 ? (activeSlide += 1) : (activeSlide -= 1);
     }
   }
   // make sure we're not past the end or beginning slide
