@@ -62,8 +62,19 @@ function renderWalkingPerson(node) {
     'M -100, 0, h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100'
   );
   stairsPath.setAttribute('stroke-width', '4');
+  const personHead = document.createElementNS('http://www.w3.org/2000/svg','circle');
+  personHead.style.fill = 'none';
+  personHead.style.cx = '800';
+  personHead.style.cy = '100';
+  personHead.style.r = '40';
+  personHead.style.display = 'block';
+  personHead.setAttribute('stroke-width', '4');
+  const torso = document.createElementNS('http://www.w3.org/2000/svg','path');
+  torso.style.stroke = 'black';
+  torso.setAttribute('d', 'M 800,140 v 120');
+  torso.setAttribute('stroke-width', '4');
 
-  walkingPersonSvg.appendChild(stairsPath);
+  walkingPersonSvg.append(stairsPath, personHead, torso);
 
   setInterval(function(){
     stairsPath.removeAttribute('transform');
