@@ -9,7 +9,8 @@ const colorArray = [
 ];
 const slides = document.querySelectorAll("#slider section");
 const container = document.querySelector("#slides");
-if (container && slides) {
+if (container) {
+  console.log("container exists");
   let dur = 0.5;
   let offsets = [];
   let oldSlide = 0;
@@ -173,9 +174,9 @@ if (container && slides) {
       offsets.push(-slides[i].offsetLeft);
     }
     gsap.set(container, { x: offsets[activeSlide] });
-    dragMe[0].vars.snap = offsets;
+    dragMe.vars.snap = offsets;
     console.log({ "offsets": offsets });
-    console.log({ "dragme0": dragMe[0] });
+    console.log({ "dragme0": dragMe });
   }
 
   gsap.set(".hideMe", { opacity: 1 });
