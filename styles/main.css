@@ -425,6 +425,20 @@ section#portfolio p {
   overflow: visible;
 }
 
+#escalator {
+  animation: 4s linear infinite escalator;
+}
+
+@keyframes escalator {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(100px, 100px);
+  }
+}
+
 @media (max-width: 480px) {
   section img {
     max-width: 200px;
