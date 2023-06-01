@@ -426,7 +426,7 @@ section#portfolio p {
 }
 
 #escalator {
-  animation: 4s linear infinite escalator;
+  animation: 2s linear infinite escalator;
 }
 
 @keyframes escalator {
@@ -440,7 +440,7 @@ section#portfolio p {
 }
 
 #person {
-  transform: translate(-340px, 180px);
+  transform: translate(-350px, 186px);
 }
 
 #left-arm {
@@ -472,6 +472,67 @@ section#portfolio p {
     transform: rotate(45deg);
   }
 }
+
+#left-leg {
+  animation: 2s ease-in-out infinite alternate-reverse leftLeg;
+  transform-origin: 790px 275px;
+}
+
+@keyframes leftLeg {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-15deg);
+  }
+}
+
+#right-leg {
+  animation: 2s ease-in-out infinite alternate rightLeg;
+  transform-origin: 790px 275px;
+}
+
+@keyframes rightLeg {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-15deg);
+  }
+}
+
+#left-calf {
+  animation: 2s ease-in-out infinite alternate leftCalf;
+  transform-origin: 790px 350px;
+}
+
+@keyframes leftCalf {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(80deg);
+  }
+}
+
+#right-calf {
+  animation: 2s ease-in-out infinite alternate-reverse leftCalf;
+  transform-origin: 790px 350px;
+}
+
+@keyframes leftCalf {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(80deg);
+  }
+}
+
 
 @media (max-width: 480px) {
   section img {

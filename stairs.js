@@ -76,17 +76,31 @@ function renderWalkingPerson(node) {
           d: 'M 797,170 l 15, 45 l 30, 45 ',
           id: 'right-arm',
         }),
-        PATH({
-          d: 'M 790,275 l 30, 75 ',
-          id: 'right-leg-thigh',
-          stroke: 'red',
-        }),
-        PATH({
-          d: 'M 820, 350 l 0, 75 ',
-          id: 'right-leg-calf',
-          stroke: 'blue',
-        })]
-    )
+        GROUP({id: 'left-leg'}, [
+          PATH({
+            d: 'M 790,275 l 0, 75 ',
+            id: 'left-thigh',
+            stroke: 'red',
+          }),
+          PATH({
+            d: 'M 790, 350 l 0, 65 ',
+            id: 'left-calf',
+            stroke: 'red',
+          }),
+        ]),
+        GROUP({id: 'right-leg'}, [
+          PATH({
+            d: 'M 790,275 l 0, 75 ',
+            id: 'right-thigh',
+            stroke: 'blue',
+          }),
+          PATH({
+            d: 'M 790, 350 l 0, 65 ',
+            id: 'right-calf',
+            stroke: 'blue',
+          })
+        ]),
+      ])
     ])
   );
 }
