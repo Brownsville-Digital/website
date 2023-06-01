@@ -59,7 +59,7 @@ function renderWalkingPerson(node) {
       }),
       GROUP({id: 'person'},
         [SVGA({title:"happiness", href: '#'}, CIRCLE({
-          fill: 'none',
+          fill: 'transparent',
           cx: '810',
           cy: '100',
           r: '40',
@@ -80,24 +80,20 @@ function renderWalkingPerson(node) {
           PATH({
             d: 'M 790,275 l 0, 75 ',
             id: 'left-thigh',
-            stroke: 'red',
           }),
           PATH({
             d: 'M 790, 350 l 0, 65 ',
             id: 'left-calf',
-            stroke: 'red',
           }),
         ]),
         GROUP({id: 'right-leg'}, [
           PATH({
             d: 'M 790,275 l 0, 75 ',
             id: 'right-thigh',
-            stroke: 'blue',
           }),
           PATH({
             d: 'M 790, 350 l 0, 65 ',
             id: 'right-calf',
-            stroke: 'blue',
           })
         ]),
       ])

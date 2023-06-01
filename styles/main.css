@@ -440,7 +440,17 @@ section#portfolio p {
 }
 
 #person {
-  transform: translate(-350px, 186px);
+  animation: 2s ease-out infinite alternate Person;
+}
+
+@keyframes Person {
+  from {
+    transform: translate(-360px, 185px);
+  }
+
+  to {
+    transform: translate(-360px, 165px);
+  }
 }
 
 #left-arm {
