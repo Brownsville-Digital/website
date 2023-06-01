@@ -435,8 +435,12 @@ section#portfolio p {
   }
 
   to {
-    transform: translate(100px, 100px);
+    transform: translate(-60px, -40px);
   }
+}
+
+#person {
+  transform: translate(-340px, 180px);
 }
 
 #left-arm {
@@ -445,6 +449,21 @@ section#portfolio p {
 }
 
 @keyframes leftArm {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+#right-arm {
+  animation: 2s ease-in-out infinite alternate rightArm;
+  transform-origin: 800px 170px;
+}
+
+@keyframes rightArm {
   from {
     transform: rotate(0);
   }

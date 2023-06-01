@@ -1,7 +1,7 @@
 
 console.log("stairs.js loaded");
 import {choc, set_content, on, DOM} from './factory.js';
-const {"svg:a": SVGA, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG} = choc; //autoimport
+const {"svg:a": SVGA, "svg:g": GROUP, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG} = choc; //autoimport
 /* const walkingPerson = document.createElement('svg');
 walkingPerson.setAttribute("viewBox", "0 0 1600 900");
 walkingPerson.setAttribute("xmlns", "http://www.w3.org/2000/svg");
@@ -51,29 +51,42 @@ function renderWalkingPerson(node) {
       viewBox: '0 0 1600 900',
       stroke: 'black',
       'stroke-width': '4',
-      style: 'width: 800px; height: 450px;',
+      style: 'width: 800px; height: 450px; border: 1px solid black;',
     }, [
       PATH({
-        d: 'M -100, 0, h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100',
+        d: 'M -180, 200 ' + Array(Math.ceil(900/40)).join(' h' + 60 + ' v' + 40),
         id: 'escalator',
       }),
-      SVGA({title:"testing the anchor"}, CIRCLE({
-        fill: 'none',
-        cx: '800',
-        cy: '100',
-        r: '40',
-      })),
-      PATH({
-        d: 'M 800,140 v 145',
-      }),
-      PATH({
-        d: 'M 800,170 l 30, 45 l -20, 45',
-        id: 'left-arm',
-      }),
-      PATH({
-        d: 'M 800,170 l -15, 45 l -30, 45 ',
-        id: 'right-arm',
-      })
+      GROUP({id: 'person'},
+        [SVGA({title:"happiness", href: '#'}, CIRCLE({
+          fill: 'none',
+          cx: '810',
+          cy: '100',
+          r: '40',
+        })),
+        PATH({
+          d: 'M 800,140 l -10 135',
+          id: 'torso',
+        }),
+        PATH({
+          d: 'M 797,170 l -30, 45 l 20, 45',
+          id: 'left-arm',
+        }),
+        PATH({
+          d: 'M 797,170 l 15, 45 l 30, 45 ',
+          id: 'right-arm',
+        }),
+        PATH({
+          d: 'M 790,275 l 30, 75 ',
+          id: 'right-leg-thigh',
+          stroke: 'red',
+        }),
+        PATH({
+          d: 'M 820, 350 l 0, 75 ',
+          id: 'right-leg-calf',
+          stroke: 'blue',
+        })]
+    )
     ])
   );
 }
