@@ -439,6 +439,21 @@ section#portfolio p {
   }
 }
 
+#left-arm {
+  animation: 2s ease-in-out infinite alternate leftArm;
+  transform-origin: 800px 170px;
+}
+
+@keyframes leftArm {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
+
 @media (max-width: 480px) {
   section img {
     max-width: 200px;

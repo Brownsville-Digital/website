@@ -1,5 +1,7 @@
-console.clear();
-const main = document.createElement('main');
+
+console.log("stairs.js loaded");
+import {choc, set_content, on, DOM} from './factory.js';
+const {"svg:a": SVGA, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG} = choc; //autoimport
 /* const walkingPerson = document.createElement('svg');
 walkingPerson.setAttribute("viewBox", "0 0 1600 900");
 walkingPerson.setAttribute("xmlns", "http://www.w3.org/2000/svg");
@@ -40,44 +42,40 @@ setTimeout(function(){
 walkingPerson.append(personHead, torso, stairs);
 main.appendChild(btn);
 main.appendChild(walkingPerson); */
-document.body.innerHTML = '';
-document.body.appendChild(main);
 
 function renderWalkingPerson(node) {
-  const walkingPersonSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  const stairsPath = document.createElementNS(
-    'http://www.w3.org/2000/svg',
-    'path'
+
+  return node.appendChild(
+    SVG({
+      fill: 'none',
+      viewBox: '0 0 1600 900',
+      stroke: 'black',
+      'stroke-width': '4',
+      style: 'width: 800px; height: 450px;',
+    }, [
+      PATH({
+        d: 'M -100, 0, h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100',
+        id: 'escalator',
+      }),
+      SVGA({title:"testing the anchor"}, CIRCLE({
+        fill: 'none',
+        cx: '800',
+        cy: '100',
+        r: '40',
+      })),
+      PATH({
+        d: 'M 800,140 v 145',
+      }),
+      PATH({
+        d: 'M 800,170 l 30, 45 l -20, 45',
+        id: 'left-arm',
+      }),
+      PATH({
+        d: 'M 800,170 l -15, 45 l -30, 45 ',
+        id: 'right-arm',
+      })
+    ])
   );
-
-  walkingPersonSvg.setAttribute('fill', 'none');
-  walkingPersonSvg.setAttribute('viewBox', '0 0 1600 900');
-  walkingPersonSvg.setAttribute('stroke', 'black');
-  walkingPersonSvg.style.width = '800px';
-  walkingPersonSvg.style.height = '450px';
-  walkingPersonSvg.classList.add('walking-person');
-
-  stairsPath.setAttribute(
-    'd',
-    'M -100, 0, h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100 h 100, v 100'
-  );
-  stairsPath.setAttribute('stroke-width', '4');
-  stairsPath.setAttribute('id', 'escalator');
-  const personHead = document.createElementNS('http://www.w3.org/2000/svg','circle');
-  personHead.style.fill = 'none';
-  personHead.style.cx = '800';
-  personHead.style.cy = '100';
-  personHead.style.r = '40';
-  personHead.style.display = 'block';
-  personHead.setAttribute('stroke-width', '4');
-  const torso = document.createElementNS('http://www.w3.org/2000/svg','path');
-  torso.style.stroke = 'black';
-  torso.setAttribute('d', 'M 800,140 v 120');
-  torso.setAttribute('stroke-width', '4');
-
-  walkingPersonSvg.append(stairsPath, personHead, torso);
-
-  return node.appendChild(walkingPersonSvg);
 }
 
-renderWalkingPerson(main);
+renderWalkingPerson(DOM('main'));
