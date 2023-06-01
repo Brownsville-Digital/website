@@ -1,7 +1,7 @@
 
 console.log("stairs.js loaded");
 import {choc, set_content, on, DOM} from './factory.js';
-const {"svg:a": SVGA, "svg:g": GROUP, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG} = choc; //autoimport
+const {"svg:a": SVGA, "svg:g": GROUP, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG, "svg:text": SVGTEXT} = choc; //autoimport
 /* const walkingPerson = document.createElement('svg');
 walkingPerson.setAttribute("viewBox", "0 0 1600 900");
 walkingPerson.setAttribute("xmlns", "http://www.w3.org/2000/svg");
@@ -49,9 +49,9 @@ function renderWalkingPerson(node) {
     SVG({
       fill: 'none',
       viewBox: '0 0 1600 900',
-      stroke: 'black',
+      stroke: 'var(--brand-primary)',
       'stroke-width': '4',
-      style: 'width: 800px; height: 450px; border: 1px solid black;',
+      style: 'max-width: 100%; height: auto; border: 1px solid black;',
     }, [
       PATH({
         d: 'M -180, 200 ' + Array(Math.ceil(900/40)).join(' h' + 60 + ' v' + 40),
@@ -96,8 +96,8 @@ function renderWalkingPerson(node) {
             id: 'right-calf',
           })
         ]),
-      ])
-    ])
+      ]),
+      SVGTEXT({x:'50%', y: 100, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)'}, "So, here we actually are.")]) // End SVG
   );
 }
 

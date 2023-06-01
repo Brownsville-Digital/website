@@ -489,12 +489,16 @@ section#portfolio p {
 }
 
 @keyframes leftLeg {
-  from {
+  0% {
     transform: rotate(0);
   }
 
-  to {
+  70% {
     transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(-25deg);
   }
 }
 
@@ -504,12 +508,16 @@ section#portfolio p {
 }
 
 @keyframes rightLeg {
-  from {
+  0% {
     transform: rotate(0);
   }
 
-  to {
+  70% {
     transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(-25deg);
   }
 }
 
@@ -519,27 +527,27 @@ section#portfolio p {
 }
 
 @keyframes leftCalf {
-  from {
+  0% {
     transform: rotate(0);
   }
 
-  to {
-    transform: rotate(80deg);
+  100% {
+    transform: rotate(110deg);
   }
 }
 
 #right-calf {
-  animation: 2s ease-in-out infinite alternate-reverse leftCalf;
+  animation: 2s ease-in-out infinite alternate-reverse rightCalf;
   transform-origin: 790px 350px;
 }
 
-@keyframes leftCalf {
-  from {
+@keyframes rightCalf {
+  0% {
     transform: rotate(0);
   }
 
-  to {
-    transform: rotate(80deg);
+  100% {
+    transform: rotate(110deg);
   }
 }
 
