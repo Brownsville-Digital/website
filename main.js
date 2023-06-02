@@ -1,7 +1,68 @@
-import {choc, set_content, on, DOM} from './factory.js';
-const {H1} = choc; //autoimport
 
-console.log("main.js loaded");
+import {choc, set_content, on, DOM} from './factory.js';
+const {H1, "svg:a": SVGA, "svg:g": GROUP, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG, "svg:text": SVGTEXT} = choc; //autoimport
+
+function renderWalkingPerson(node) {
+
+  return node.appendChild(
+    SVG({
+      fill: 'none',
+      viewBox: '0 0 1600 900',
+      stroke: 'var(--brand-primary)',
+      'stroke-width': '4',
+      style: 'max-width: 100%; height: auto;',
+    }, [
+      PATH({
+        d: 'M -180, 200 ' + Array(Math.ceil(900/40)).join(' h' + 60 + ' v' + 40),
+        id: 'escalator',
+      }),
+      GROUP({id: 'person'},
+        [SVGA({title:"happiness", href: '#'}, CIRCLE({
+          fill: 'transparent',
+          cx: '810',
+          cy: '100',
+          r: '40',
+        })),
+        PATH({
+          d: 'M 800,140 l -10 135',
+          id: 'torso',
+        }),
+        PATH({
+          d: 'M 797,170 l -30, 45 l 20, 45',
+          id: 'left-arm',
+        }),
+        PATH({
+          d: 'M 797,170 l 15, 45 l 30, 45 ',
+          id: 'right-arm',
+        }),
+        GROUP({id: 'left-leg'}, [
+          PATH({
+            d: 'M 790,275 l 0, 75 ',
+            id: 'left-thigh',
+          }),
+          PATH({
+            d: 'M 790, 350 l 0, 65 ',
+            id: 'left-calf',
+          }),
+        ]),
+        GROUP({id: 'right-leg'}, [
+          PATH({
+            d: 'M 790,275 l 0, 75 ',
+            id: 'right-thigh',
+          }),
+          PATH({
+            d: 'M 790, 350 l 0, 65 ',
+            id: 'right-calf',
+          })
+        ]),
+      ]),
+      SVGTEXT({x:'50%', y: 100, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "Enjoy an experiment in"),
+      SVGTEXT({x:'50%', y: 150, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "animating scalable vector "),
+      SVGTEXT({x:'50%', y: 200, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "graphics with CSS.")]) // End SVG
+  );
+}
+
+renderWalkingPerson(document.querySelector("#walkingPerson"));
 
 const tl = gsap.timeline();
 tl.from('#whatsthestory path', {duration: 0.4, stagger: 0.2, fill: "var(--brand-secondary)", opacity: 0, y: "random(-150, 150)", ease: "bounce"});
@@ -46,12 +107,11 @@ function drawLine(obj, svg, color) {
 };
 
 const colorArray = [
-  "#683A5E",
-  "#262626",
-  "#426F42",
-  "#8B814C",
-  "#36648B",
-  "#36648B"
+  "#4B7C8E",
+  "#F3F5D6",
+  "#0A2134",
+  "#CBBB9D",
+  "#4B7C8E",
 ];
 const slides = document.querySelectorAll("#slider section");
 const container = document.querySelector("#slides");
@@ -174,12 +234,6 @@ if (container) {
   // main action check which of the 4 types of interaction called the function
   function slideAnim(e) {
     oldSlide = activeSlide;
-
-    console.log({"innerWidth": iw});
-    console.log({"this": this});
-    console.log({"oldSlide": oldSlide});
-    console.log({"activeSlide": activeSlide});
-    console.log({"dragMe": dragMe});
     // dragging the panels
     if (this.id === "dragger") {
       activeSlide = offsets.indexOf(this.endX);
@@ -222,8 +276,6 @@ if (container) {
     }
     gsap.set(container, {x: offsets[activeSlide]});
     dragMe.vars.snap = offsets;
-    console.log({"offsets": offsets});
-    console.log({"dragme0": dragMe});
   }
 
   gsap.set(".hideMe", {opacity: 1});
