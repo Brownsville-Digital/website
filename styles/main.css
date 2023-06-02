@@ -341,13 +341,17 @@ section#portfolio {
   fill: transparent;
 }
 
-h1 {
+#slides h1 {
   position: absolute;
   z-index: 100;
   font-size: 18px;
   text-align: center;
   width: 100%;
   text-transform: capitalize;
+}
+
+#ThinkPeace p {
+  color: var(--brand-primary);
 }
 
 span {
@@ -430,6 +434,16 @@ section#portfolio p {
   overflow: visible;
 }
 
+#walkingPerson:hover::before {
+  content: '⛅ Click me...'
+}
+
+p::first-letter {
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+
 #escalator {
   animation: 2s linear infinite escalator;
 }
@@ -446,6 +460,18 @@ section#portfolio p {
 
 #person {
   animation: 2s ease-out infinite alternate Person;
+}
+
+#person a:hover::before {
+  content: '⛅ Click me...'
+}
+
+#person a:hover>circle {
+  fill: var(--brand-secondary);
+}
+
+#person circle {
+  fill: none;
 }
 
 @keyframes Person {

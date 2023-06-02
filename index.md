@@ -329,17 +329,34 @@ category: hero full-width
           </svg><span>We've helped to define and solve.</span>
           </section>
 
-          <section> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/314556/greensock-logo.svg" alt="GreenSock Logo" width="300">
-            <p>This slider demo is powered by GSAP 3 along with the Draggable and Inertia plugins</p>
+          <section id=ThinkPeace>
+            <h3>Think Peace</h3>
+            <img src="images/thinkpeacehead.png" alt="GreenSock Logo" width="300px">
+            <p>Coming soon</p>
           </section>
 
-          <section> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/314556/clock.png" width="75" alt="clock">
-            <h3>Bottom dot animation</h3>
-            <p>See that animation on the bottom with the navigation dots and rotating slide titles? Its time is based on the position of the draggable element. Keep an eye on it as you drag or the slides animate.</p>
+          <section>
+            <h3>Elliptica In-Studio App</h3>
+            <img src="images/ellipticainstudio.png" width="800" alt="projected data">
+            <p>Coming soon</p>
           </section>
 
           <section id="section6">
+            <h3>Elliptica In-Studio App</h3>
             <img src="images/3dstar.svg" width="200" alt="RenMan Star">
+            <p>Coming soon</p>
+          </section>
+
+          <section id="wordpresssite">
+            <h3>Baughman Properties</h3>
+            <img src="images/baughman.png" width="500" alt="Baughman Properties">
+            <p>Coming soon</p>
+          </section>
+
+          <section id="wordpresscoding">
+            <h3>Baughman Properties</h3>
+            <img src="images/baughman.png" width="500" alt="Baughman Properties">
+            <p>Coming soon</p>
           </section>
 
           <section id=walkingPerson>
@@ -350,13 +367,13 @@ category: hero full-width
       <div class="dots"></div>
       <div class="titleWrap">
         <div class="title">
-          1. Controlling the slider
+          1. Some of our work
         </div>
         <div class="title">
-          2. Powered by GSAP
+          2. Think Peace App
         </div>
         <div class="title">
-          3. Bottom dot animation
+          3. Elliptica In-Studio App
         </div>
         <div class="title">
           4. Random dog
