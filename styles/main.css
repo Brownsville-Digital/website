@@ -532,7 +532,7 @@ section#portfolio p {
   }
 
   100% {
-    transform: rotate(110deg);
+    transform: rotate(80deg);
   }
 }
 
@@ -547,7 +547,7 @@ section#portfolio p {
   }
 
   100% {
-    transform: rotate(110deg);
+    transform: rotate(80deg);
   }
 }
 
