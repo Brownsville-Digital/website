@@ -11,6 +11,7 @@ function renderWalkingPerson(node) {
       stroke: 'var(--brand-primary)',
       'stroke-width': '4',
       style: 'max-width: 100%; height: auto;',
+      id: 'walkingPerson',
     }, [
       PATH({
         d: 'M -180, 200 ' + Array(Math.ceil(900/40)).join(' h' + 60 + ' v' + 40),
@@ -18,7 +19,6 @@ function renderWalkingPerson(node) {
       }),
       GROUP({id: 'person'},
         [SVGA({title:"happiness", href: '#'}, CIRCLE({
-          fill: 'transparent',
           cx: '810',
           cy: '100',
           r: '40',
@@ -125,10 +125,6 @@ if (container) {
   let dots = document.querySelector(".dots");
   let navDots = [];
   let iw = window.innerWidth;
-  const mouseAnim = gsap.timeline({repeat: -1, repeatDelay: 1});
-  const handAnim = gsap.timeline({repeat: -1, repeatDelay: 1});
-  const cursorAnim = gsap.timeline({repeat: -1, repeatDelay: 1});
-  const arrowAnim = gsap.timeline({repeat: -1, repeatDelay: 1});
   const leftArrow = document.querySelector("#leftArrow");
   const rightArrow = document.querySelector("#rightArrow");
 
@@ -145,49 +141,6 @@ if (container) {
     newDot.addEventListener("click", slideAnim);
     dots.appendChild(newDot);
   }
-
-  // icon animations for slide 1
-  mouseAnim.fromTo(
-    "#mouseRings circle",
-    {attr: {r: 10}},
-    {attr: {r: 40}, duration: 0.8, stagger: 0.25}
-  );
-  mouseAnim.fromTo(
-    "#mouseRings circle",
-    {opacity: 0},
-    {opacity: 1, duration: 0.4, stagger: 0.25},
-    0
-  );
-  mouseAnim.fromTo(
-    "#mouseRings circle",
-    {opacity: 1},
-    {opacity: 0, duration: 0.4, stagger: 0.25},
-    0.4
-  );
-
-  handAnim.to("#hand", {duration: 0.75, rotation: -10, transformOrigin: "center bottom"});
-  handAnim.to("#hand", {duration: 0.5, rotation: 14, ease: "power3.inOut"});
-  handAnim.to("#hand", {duration: 1, rotation: 0, transformOrigin: "center bottom"});
-
-  cursorAnim.to("#cursor", {duration: 0.25, x: -22});
-  cursorAnim.to(
-    "#iconCircles circle",
-    0.5,
-    {duration: 0.5, attr: {r: 6}, stagger: 0.15},
-    "expand"
-  );
-  cursorAnim.to("#cursor", {duration: 1.1, x: 40}, "expand");
-  cursorAnim.to("#cursor", {duration: 0.75, x: 0}, "contract");
-  cursorAnim.to("#iconCircles circle", {duration: 0.5, attr: {r: 4}}, "contract");
-
-  arrowAnim.to("#caret", {
-    duration: 0.5,
-    attr: {points: "60 30, 35 50, 60 70"},
-    repeat: 3,
-    yoyo: true,
-    ease: "power2.inOut",
-    repeatDelay: 0.25
-  });
 
   // get elements positioned
   gsap.set(".dots, .titleWrap", {xPercent: -50});
