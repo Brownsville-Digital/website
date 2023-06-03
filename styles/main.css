@@ -123,6 +123,11 @@ section svg path {
   fill: none;
 }
 
+#slides section {
+  border-top: 1px solid var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+}
+
 #themap,
 #roadmap {
   width: calc(50% - 2em);
@@ -423,21 +428,6 @@ section#portfolio p {
   max-width: 400px;
   font-weight: 400;
   text-align: center;
-}
-
-.twitterFollow {
-  padding: 16px;
-  margin-top: 16px;
-  cursor: pointer;
-  border-radius: 500px;
-  text-decoration: none;
-  border: solid 2px white;
-  color: white;
-}
-
-.twitterFollow:hover {
-  background: white;
-  color: #000;
 }
 
 .hideMe {
