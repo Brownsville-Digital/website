@@ -260,17 +260,18 @@ body {
   line-height: 1.5;
 }
 
-/* Slider */
+/* Portfolio */
 section#portfolio {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: var(--brand-secondary);
   overflow: hidden;
   height: 100vh;
   width: 100%;
   position: relative;
 }
+
 
 #sliderWrap {
   width: 100%;
@@ -307,7 +308,7 @@ section#portfolio {
   height: 12px;
   border-radius: 100%;
   position: relative;
-  background-color: #fff;
+  background-color: var(--brand-secondary);
   margin: 12px 8px;
   cursor: pointer;
   float: left;
@@ -344,10 +345,42 @@ section#portfolio {
 #portfolio h1 {
   position: absolute;
   z-index: 100;
-  font-size: 18px;
+  font-size: 1.2em;
   text-align: center;
   width: 100%;
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+
+#portfolio h1 .previous-puzzles {
+  fill: var(--brand-secondary);
+}
+
+#portfolio h1 svg.type {
+  fill: var(--brand-secondary);
+  stroke: var(--brand-secondary);
+  max-width: 50%;
+  height: auto;
+}
+
+#portfolio h1 svg.type path {
+  fill: var(--brand-secondary);
+  stroke: var(--brand-secondary);
+}
+
+#portfolio h1 span {
+  text-transform: none;
+  font-size: 1em;
+  font-weight: 400;
+  display: block;
+}
+
+#portfolio .logo-icon {
+  fill: var(--brand-secondary);
+  stroke: var(--brand-secondary);
+  max-height: 40%;
+  width: auto;
+  margin: 0.4em auto;
+  display: block;
 }
 
 #ThinkPeace,
@@ -355,13 +388,8 @@ section#portfolio {
   color: var(--brand-primary);
 }
 
-span {
-  display: block;
-  font-size: 0.75em;
-  font-weight: 400;
-}
 
-.titleWrap {
+section#portfolio .titleWrap {
   height: 30px;
   position: absolute;
   z-index: 20;
@@ -370,7 +398,7 @@ span {
   overflow-y: hidden;
 }
 
-.title {
+section#portfolio .title {
   height: 30px;
   line-height: 30px;
   text-align: center;

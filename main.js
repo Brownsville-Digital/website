@@ -56,9 +56,13 @@ function renderWalkingPerson(node) {
           })
         ]),
       ]),
-      SVGTEXT({x:'50%', y: 100, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "Enjoy an experiment in"),
-      SVGTEXT({x:'50%', y: 150, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "animating scalable vector "),
-      SVGTEXT({x:'50%', y: 200, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "graphics with CSS.")]) // End SVG
+      SVGTEXT({x:'50%', y: 250, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "Enjoy an experiment in"),
+      SVGTEXT({x:'50%', y: 300, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "animating scalable vector "),
+      SVGTEXT({x:'50%', y: 350, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "graphics with CSS."),
+      SVGTEXT({x:'50%', y: 450, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "The deeper you go, "),
+      SVGTEXT({x:'50%', y: 500, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "the deeper you find "),
+      SVGTEXT({x:'50%', y: 550, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "deeper it gets."),
+    ]) // End SVG
   );
 }
 
@@ -107,11 +111,17 @@ function drawLine(obj, svg, color) {
 };
 
 const colorArray = [
+  "#3d0000",
   "#4B7C8E",
-  "#F3F5D6",
   "#0A2134",
   "#CBBB9D",
   "#4B7C8E",
+  "#CBBB9D",
+  "#0A2134",
+  "#CBBB9D",
+  "#4B7C8E",
+  "#0A2134",
+  "#CBBB9D",
 ];
 const slides = document.querySelectorAll("#slider section");
 const container = document.querySelector("#slides");
