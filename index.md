@@ -332,32 +332,33 @@ category: hero full-width
             <h3>So Much to Communicate</h3>
             <svg class="logo-icon" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
                 <rect x="0" y="0" width="400" height="400" style="fill:none;stroke-width:4.67px;"/>
+                <circle cx="200" cy="200" r="100" style="fill:none;stroke-width:1px;"/>
             </svg>
-            <p>This is a small sampling, aiming to convey the general scope of projects.</p>
+            <p>Scroll right for a sampling, aiming to convey the general scope of projects.</p>
           </section>
 
           <section id=ThinkPeace>
             <h3>Think Peace</h3>
             <img src="images/thinkpeacehead.png" alt="GreenSock Logo" width="300px">
-            <p></p>
+            <p>This project, build with ReactJS and MongoDB allows users to record wishes sent around the Earth. Audio and video themes created by guest artists respond to the the state of wishes.</p>
           </section>
 
           <section>
             <h3>Elliptica In-Studio App</h3>
             <img src="images/ellipticainstudio.png" width="800" alt="In-Studio Statistics Screenshot">
-            <p>Coming soon</p>
+            <p>A fitness studio needed to display live data from the Keiser elliptical machines of the students and instructor. It utilizes Python Flask, Javascript (and some typescript) dynamic CSS gradients, DOM, WebSocket and WebAudio APIs.</p>
           </section>
 
           <section id="wordpresscoding">
             <h3>Mindbody Wordpress Plugin</h3>
             <img src="images/mboplugin.png" width="500" alt="Mindbody Plugin Wordpress Page">
-            <p>Coming soon</p>
+            <p>This nitche plugin, originally utilizing SOAP, and now (thankfully) REST, pulls in schedule and instructor data from the Mindbody Online account of the administrator. It also supports extension plugins via an Easy Digital Downloads-influenced singleton pattern.</p>
           </section>
 
           <section id="wordpresssite">
             <h3>Baughman Properties Website</h3>
             <img src="images/baughman.png" width="500" alt="Baughman Properties">
-            <p>Coming soon</p>
+            <p>The Roots.io toolset includes Webpack, Ansible and PHP Laravel framework for enterprise level provisioning, deployment and maintenance of projects utilizing the Wordpress framework. The above project, details about rental properties are administratable. We don't specialize in graphic design, but sometimes take on that role. User Experience is, of course, the foundation.</p>
           </section>
 
           <section id=walkingPerson>

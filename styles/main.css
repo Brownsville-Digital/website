@@ -374,12 +374,17 @@ section#portfolio {
   display: block;
 }
 
+
+#portfolio img {
+  margin: 1em auto;
+}
+
 #portfolio .logo-icon {
   fill: var(--brand-secondary);
   stroke: var(--brand-secondary);
   max-height: 40%;
   width: auto;
-  margin: 0.4em auto;
+  margin: 0.8em auto;
   display: block;
 }
 

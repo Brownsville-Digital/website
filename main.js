@@ -110,11 +110,13 @@ function drawLine(obj, svg, color) {
   svg.style.fill = (Math.floor(obj.length) == Math.floor(obj.pathLength)) ? color : "none";
 };
 
+/* Portfolio Slider */
+// source: https://greensock.com/forums/topic/19393-fullscreen-sliders-horizontal-and-vertical/
 const colorArray = [
   "#3d0000",
   "#4B7C8E",
   "#0A2134",
-  "#CBBB9D",
+  "#3d0000",
   "#4B7C8E",
   "#CBBB9D",
   "#0A2134",
