@@ -341,7 +341,7 @@ section#portfolio {
   fill: transparent;
 }
 
-#slides h1 {
+#portfolio h1 {
   position: absolute;
   z-index: 100;
   font-size: 18px;
@@ -350,6 +350,7 @@ section#portfolio {
   text-transform: capitalize;
 }
 
+#ThinkPeace,
 #ThinkPeace p {
   color: var(--brand-primary);
 }
@@ -432,10 +433,6 @@ section#portfolio p {
   height: 50px;
   margin: 6px 0;
   overflow: visible;
-}
-
-#walkingPerson:hover::before {
-  content: '⛅ Click me...'
 }
 
 p::first-letter {

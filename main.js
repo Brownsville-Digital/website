@@ -126,10 +126,49 @@ if (container) {
   let navDots = [];
   let iw = window.innerWidth;
   const leftArrow = document.querySelector("#leftArrow");
-  const rightArrow = document.querySelector("#rightArrow");
 
   leftArrow && leftArrow.addEventListener("click", slideAnim);
   rightArrow && rightArrow.addEventListener("click", slideAnim);
+
+  /* Portfolio Gallery */
+  const portfolio = [
+    {
+      "title": "The Walking Person",
+      "description": "A simple animation of a person walking up an escalator.",
+      "image": "walking-person.svg",
+    },
+    {
+      "title": "Elliptica In-Studio App",
+      "description": "Coming Soon",
+      "image": "ellipticainstudio.png",
+    },
+    {
+      "title": "Think Peace App",
+      "description": "Coming Soon",
+      "image": "thinkpeacehead.png",
+    },
+    {
+      "title": "Wordpress Plugins",
+      "description": "Coming Soon",
+      "image": "mboplugin.png",
+    },
+    {
+      "title": "Wordpress Themes",
+      "description": "Coming Soon",
+      "image": "baughman.png",
+    }
+  ];
+
+  on("click", "#later", e => {
+    let item = 0;
+    do {
+      if (item < portfolio.length - 1) ++item; else {
+        gsap.to(container, dur, {x: offsets[activeSlide], onUpdate: tweenDot});
+      }
+    } while (item < portfolio.length);
+
+    slideAnim();
+  });
 
   // set slides background colors and create the nav dots
   for (let i = 0; i < slides.length; i++) {
@@ -167,21 +206,6 @@ if (container) {
   );
   dotAnim.time(1);
 
-  // make the whole thing draggable
-  let dragMe = Draggable.create(container, {
-    type: "x",
-    edgeResistance: 1,
-    snap: offsets,
-    inertia: true,
-    bounds: "#slides",
-    onDrag: tweenDot,
-    onThrowUpdate: tweenDot,
-    onDragEnd: slideAnim,
-    allowNativeTouchScrolling: false,
-    zIndexBoost: false
-  })[0];
-
-  dragMe.id = "dragger";
   sizeIt();
 
   // main action check which of the 4 types of interaction called the function
@@ -228,7 +252,6 @@ if (container) {
       offsets.push(-slides[i].offsetLeft);
     }
     gsap.set(container, {x: offsets[activeSlide]});
-    dragMe.vars.snap = offsets;
   }
 
   gsap.set(".hideMe", {opacity: 1});
