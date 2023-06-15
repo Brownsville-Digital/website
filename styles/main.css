@@ -158,8 +158,14 @@ main svg rect {
   stroke: var(--brand-secondary);
 }
 
-#walkingPerson svg svgtext {
+#walkingPerson svg text {
   fill: var(--brand-secondary);
+  fill-opacity: 0.25;
+  transition: all 15s;
+}
+
+#walkingPerson.isIntersecting svg text {
+  fill-opacity: 1;
 }
 
 #slides section {
