@@ -72,15 +72,15 @@ section {
 
 /* SVG Sizing */
 #whatsthestory {
-  height: 1.7em;
+  height: 2.7em;
+  display: block;
+  margin: 1em auto;
 }
 
 #whoneedstohearit {
-  height: 1.5em;
-}
-
-#whoneedstohearit path {
-  opacity: 0;
+  height: 2.7em;
+  display: block;
+  margin: 1em auto;
 }
 
 #betyoureadthis,
@@ -92,6 +92,14 @@ section {
   width: 5%;
   display: block;
   margin: auto;
+}
+
+#downarrow:hover {
+  cursor: pointer;
+}
+
+#themap {
+  display: none;
 }
 
 #previouspuzzles {

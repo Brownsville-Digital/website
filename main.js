@@ -2,8 +2,11 @@
 import {choc, set_content, on, DOM} from './factory.js';
 const {H1, "svg:a": SVGA, "svg:g": GROUP, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG, "svg:text": SVGTEXT} = choc; //autoimport
 
+on('click', '#downarrow', function (event) {
+  event.match.closest('section').nextElementSibling.scrollIntoView({ behavior: "smooth" });
+});
+
 function renderWalkingPerson(node) {
-  console.log('new walking person');
   return node.appendChild(
     SVG({
       fill: 'none',
@@ -75,17 +78,25 @@ tl.from('#downarrow', {duration: 2, fill: "var(--brand-secondary)", opacity: 0, 
 // gsap.to("#themap path, #themap circle", {duration: 1, stagger: 1, opacity: 1});
 //tl.from('#budget', {duration: 1, stagger: 0.3, opacity: 0.5, x: "100%", ease: "bounce"});
 
-var tl2 = new gsap.timeline();
 
-const mapCircles = document.querySelectorAll('#themap circle');
-const mapPaths = document.querySelectorAll('#themap path');
+let observer = new IntersectionObserver(function (entries) {
+  if (entries[0].isIntersecting) {
+      document.getElementById('themap').style.display = 'inline';
+      var tl2 = new gsap.timeline();
+      const mapCircles = document.querySelectorAll('#themap circle');
+      const mapPaths = document.querySelectorAll('#themap path');
+      const interleave = ([x, ...xs], ys) =>
+        x ? [x, ...interleave(ys, xs)] : ys
+      const mapped = interleave(mapCircles, mapPaths);
+      mapped.forEach(item => tl2.add(createLineTween(item)));
+    }
+  },
+  {
+    rootMargin: "0px",
+    threshold: 0.1,
+  }
+).observe(document.getElementById('roadmapSection'));
 
-const interleave = ([x, ...xs], ys) =>
-  x ? [x, ...interleave(ys, xs)] : ys
-
-const mapped = interleave(mapCircles, mapPaths);
-
-mapped.forEach(item => tl2.add(createLineTween(item)));
 
 //this function creates a single tween that animates the stroke of an svg
 function createLineTween(svg) {

@@ -98,7 +98,7 @@ category: hero full-width
   </svg>
   </section>
 
-  <section>
+  <section id=roadmapSection>
     <svg id=roadmap viewBox="0 0 466 69">
 
         <title>Roadmap</title>
