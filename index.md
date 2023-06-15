@@ -343,6 +343,12 @@ category: hero full-width
             <p>We were tasked with building a re-purposable interface similar to the previously mentioned Mindbody Wordpress plugin, but with a robust user registration, purchasing and marketing feature.</p>
           </section>
 
+          <section id="actionfulfillment">
+            <h3>Warehouse/Fulfillment Management App</h3>
+            <img src="images/portfolio/actionfulfillment.png" width="500" alt="Warehouse Management Screenshot">
+            <p>For this project, we went with Django, a robust framework written in Python. It interfaces with Shopify and BigCommerce APIs to automatically track inventory and fulfillment status.</p>
+          </section>
+
           <section id=walkingPerson>
           </section>
 
@@ -366,7 +372,16 @@ category: hero full-width
           5. Website Design &amp; Implementation
         </div>
         <div class="title">
-          6. A CSS SVG Experiment
+          6. Custom Slideshow
+        </div>
+        <div class="title">
+          7. Account Management
+        </div>
+        <div class="title">
+          8. Warehouse Management
+        </div>
+        <div class="title">
+          9. A CSS SVG Experiment
         </div>
       </div> <!-- End titleWrap -->
     </div>  <!-- End slider -->
