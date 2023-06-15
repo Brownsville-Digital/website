@@ -17,6 +17,7 @@
 
 body {
   margin: 0;
+  color: var(--brand-primary);
 }
 
 a {
@@ -70,32 +71,48 @@ section {
   height: auto;
 }
 
+
 /* SVG Sizing */
 #whatsthestory {
   height: 2.7em;
   display: block;
   margin: 1em auto;
+  max-width: 80%;
 }
 
 #whoneedstohearit {
   height: 2.7em;
   display: block;
   margin: 1em auto;
-}
-
-#betyoureadthis,
-#scrolldown {
-  display: none;
+  max-width: 80%;
 }
 
 #downarrow {
-  width: 5%;
+  width: 10%;
   display: block;
   margin: auto;
 }
 
 #downarrow:hover {
   cursor: pointer;
+}
+
+#roadmapSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#roadmapElements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+#roadmapSection #roadmapElements svg {
+  width: 200px;
 }
 
 #themap {
@@ -109,6 +126,14 @@ section {
 section svg path {
   stroke: var(--brand-primary);
   fill: var(--brand-primary);
+}
+
+main svg rect {
+  fill: var(--brand-primary);
+}
+
+#portfolio svg rect {
+  fill: var(--brand-secondary);
 }
 
 
