@@ -112,7 +112,7 @@ section {
 }
 
 #roadmapSection #roadmapElements svg {
-  width: 200px;
+  width: 180px;
 }
 
 #themap {
@@ -427,6 +427,7 @@ section#portfolio {
 
 #portfolio img {
   margin: 1em auto;
+  max-width: 80%;
 }
 
 #portfolio .logo-icon {
@@ -654,5 +655,46 @@ p::first-letter {
 
   #previouspuzzles {
     width: 20%;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  #roadmapSection #roadmapElements svg {
+    width: 330px;
+  }
+
+  #roadmapElements {
+    gap: 2em;
+  }
+
+  section.bg-secondary.contact * {
+    font-size: xx-large;
+  }
+}
+
+@media (min-width: 992px) {
+
+  #roadmapSection #roadmapElements svg {
+    width: 400;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  #roadmapSection #roadmapElements svg {
+    width: 450;
+  }
+
+  #roadmapElements {
+    gap: 3em;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #roadmapSection #roadmapElements svg {
+    width: 500px;
   }
 }

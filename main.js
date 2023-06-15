@@ -90,7 +90,7 @@ new IntersectionObserver(function (entries) {
           x ? [x, ...interleave(ys, xs)] : ys
         const mapped = interleave(mapCircles, mapPaths);
         mapped.forEach(item => tl2.add(createLineTween(item)));
-      }, 1300);
+      }, 500);
 
     }
   },
@@ -155,35 +155,6 @@ if (container) {
 
   leftArrow && leftArrow.addEventListener("click", slideAnim);
   rightArrow && rightArrow.addEventListener("click", slideAnim);
-
-  /* Portfolio Gallery */
-  const portfolio = [
-    {
-      "title": "The Walking Person",
-      "description": "A simple animation of a person walking up an escalator.",
-      "image": "walking-person.svg",
-    },
-    {
-      "title": "Elliptica In-Studio App",
-      "description": "Coming Soon",
-      "image": "ellipticainstudio.png",
-    },
-    {
-      "title": "Think Peace App",
-      "description": "Coming Soon",
-      "image": "thinkpeacehead.png",
-    },
-    {
-      "title": "Wordpress Plugins",
-      "description": "Coming Soon",
-      "image": "mboplugin.png",
-    },
-    {
-      "title": "Wordpress Themes",
-      "description": "Coming Soon",
-      "image": "baughman.png",
-    }
-  ];
 
   on("click", "#later", e => {
     let item = 0;
