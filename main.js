@@ -68,12 +68,12 @@ function renderWalkingPerson(node) {
 renderWalkingPerson(document.querySelector("#walkingPerson"));
 
 const tl = gsap.timeline();
-tl.from('#whatsthestory path', {duration: 0.4, stagger: 0.2, fill: "var(--brand-secondary)", opacity: 0, y: "random(-150, 150)", ease: "bounce"});
-tl.to('#whoneedstohearit path', {duration: 0.2, stagger: 0.1, fill: "var(--brand-primary)", opacity: 1, ease: "bounce"});
+//tl.from('#whatsthestory path', {duration: 0.4, stagger: 0.2, fill: "var(--brand-secondary)", opacity: 0, y: "random(-150, 150)", ease: "bounce"});
+//tl.to('#whoneedstohearit path', {duration: 0.2, stagger: 0.1, fill: "var(--brand-primary)", opacity: 1, ease: "bounce"});
 tl.from('#downarrow', {duration: 2, fill: "var(--brand-secondary)", opacity: 0, y: "-150", ease: "expo"});
 
 // gsap.to("#themap path, #themap circle", {duration: 1, stagger: 1, opacity: 1});
-tl.from('#budget', {duration: 1, stagger: 0.3, opacity: 0.5, x: "100%", ease: "bounce"});
+//tl.from('#budget', {duration: 1, stagger: 0.3, opacity: 0.5, x: "100%", ease: "bounce"});
 
 var tl2 = new gsap.timeline();
 
@@ -176,8 +176,6 @@ if (container) {
 
   // set slides background colors and create the nav dots
   for (let i = 0; i < slides.length; i++) {
-    console.log(sliderColorArray);
-    console.log(sliderColorArray[i % sliderColorArray.length]);
     gsap.set(slides[i], {backgroundColor: `var(${sliderColorArray[i % sliderColorArray.length]})`});
     let newDot = document.createElement("div");
     newDot.className = "dot";
