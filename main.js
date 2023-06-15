@@ -79,23 +79,34 @@ tl.from('#downarrow', {duration: 2, fill: "var(--brand-secondary)", opacity: 0, 
 //tl.from('#budget', {duration: 1, stagger: 0.3, opacity: 0.5, x: "100%", ease: "bounce"});
 
 
-let observer = new IntersectionObserver(function (entries) {
+new IntersectionObserver(function (entries) {
   if (entries[0].isIntersecting) {
-      document.getElementById('themap').style.display = 'inline';
-      var tl2 = new gsap.timeline();
-      const mapCircles = document.querySelectorAll('#themap circle');
-      const mapPaths = document.querySelectorAll('#themap path');
-      const interleave = ([x, ...xs], ys) =>
-        x ? [x, ...interleave(ys, xs)] : ys
-      const mapped = interleave(mapCircles, mapPaths);
-      mapped.forEach(item => tl2.add(createLineTween(item)));
+    setTimeout(() => {
+        document.getElementById('themap').style.display = 'inline';
+        var tl2 = new gsap.timeline();
+        const mapCircles = document.querySelectorAll('#themap circle');
+        const mapPaths = document.querySelectorAll('#themap path');
+        const interleave = ([x, ...xs], ys) =>
+          x ? [x, ...interleave(ys, xs)] : ys
+        const mapped = interleave(mapCircles, mapPaths);
+        mapped.forEach(item => tl2.add(createLineTween(item)));
+      }, 1300);
+
     }
   },
   {
-    rootMargin: "0px",
-    threshold: 0.1,
+    threshold: 0.17,
   }
 ).observe(document.getElementById('roadmapSection'));
+
+
+new IntersectionObserver(function (entries) {
+    document.getElementById('walkingPerson').classList.toggle('isIntersecting', entries[0].isIntersecting);
+  },
+  {
+    threshold: 0.3,
+  }
+).observe(document.getElementById('walkingPerson'));
 
 
 //this function creates a single tween that animates the stroke of an svg
