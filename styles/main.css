@@ -119,8 +119,14 @@ section svg path {
   fill: var(--brand-primary);
 }
 
-#walkingPerson svg path {
+#walkingPerson svg path,
+#walkingPerson svg circle {
   fill: none;
+  stroke: var(--brand-secondary);
+}
+
+#walkingPerson svg svgtext {
+  fill: var(--brand-secondary);
 }
 
 #slides section {
@@ -391,11 +397,6 @@ section#portfolio {
   width: auto;
   margin: 0.8em auto;
   display: block;
-}
-
-#ThinkPeace,
-#ThinkPeace p {
-  color: var(--brand-primary);
 }
 
 

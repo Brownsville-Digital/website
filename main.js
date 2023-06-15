@@ -3,25 +3,24 @@ import {choc, set_content, on, DOM} from './factory.js';
 const {H1, "svg:a": SVGA, "svg:g": GROUP, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG, "svg:text": SVGTEXT} = choc; //autoimport
 
 function renderWalkingPerson(node) {
-
+  console.log('new walking person');
   return node.appendChild(
     SVG({
       fill: 'none',
       viewBox: '0 0 1600 900',
-      stroke: 'var(--brand-primary)',
       'stroke-width': '4',
       style: 'max-width: 100%; height: auto;',
       id: 'walkingPerson',
     }, [
       PATH({
         d: 'M -180, 200 ' + Array(Math.ceil(900/40)).join(' h' + 60 + ' v' + 40),
-        id: 'escalator',
+        id: 'escalator'
       }),
       GROUP({id: 'person'},
         [SVGA({title:"happiness", href: '#'}, CIRCLE({
           cx: '810',
           cy: '100',
-          r: '40',
+          r: '40'
         })),
         PATH({
           d: 'M 800,140 l -10 135',
@@ -56,12 +55,12 @@ function renderWalkingPerson(node) {
           })
         ]),
       ]),
-      SVGTEXT({x:'50%', y: 250, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "Enjoy an experiment in"),
-      SVGTEXT({x:'50%', y: 300, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "animating scalable vector "),
-      SVGTEXT({x:'50%', y: 350, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "graphics with CSS."),
-      SVGTEXT({x:'50%', y: 450, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "The deeper you go, "),
-      SVGTEXT({x:'50%', y: 500, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "the deeper you find "),
-      SVGTEXT({x:'50%', y: 550, style: 'font: 40px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "deeper it gets."),
+      SVGTEXT({x:'50%', y: 250, style: 'font: 40px monospace;', 'stroke-width': 0, 'max-width': '50%'}, "Enjoy an experiment in"),
+      SVGTEXT({x:'50%', y: 300, style: 'font: 40px monospace;', 'stroke-width': 0, 'max-width': '50%'}, "animating scalable vector "),
+      SVGTEXT({x:'50%', y: 350, style: 'font: 40px monospace;', 'stroke-width': 0, 'max-width': '50%'}, "graphics with CSS."),
+      SVGTEXT({x:'50%', y: 450, style: 'font: 40px monospace;', 'stroke-width': 0, 'max-width': '50%'}, "The deeper you go, "),
+      SVGTEXT({x:'50%', y: 500, style: 'font: 40px monospace;', 'stroke-width': 0, 'max-width': '50%'}, "the deeper you find "),
+      SVGTEXT({x:'50%', y: 550, style: 'font: 40px monospace;', 'stroke-width': 0, 'max-width': '50%'}, "deeper it gets."),
     ]) // End SVG
   );
 }
@@ -112,19 +111,13 @@ function drawLine(obj, svg, color) {
 
 /* Portfolio Slider */
 // source: https://greensock.com/forums/topic/19393-fullscreen-sliders-horizontal-and-vertical/
-const colorArray = [
-  "#3d0000",
-  "#4B7C8E",
-  "#0A2134",
-  "#3d0000",
-  "#4B7C8E",
-  "#CBBB9D",
-  "#0A2134",
-  "#CBBB9D",
-  "#4B7C8E",
-  "#0A2134",
-  "#CBBB9D",
-];
+
+const sliderColorArray = [
+  '--brand-primary', // dark brown
+  '--brand-secondary-dark', // deep dark blue
+  '--highlight', // turqouise
+]
+
 const slides = document.querySelectorAll("#slider section");
 const container = document.querySelector("#slides");
 if (container) {
@@ -133,7 +126,6 @@ if (container) {
   let offsets = [];
   let oldSlide = 0;
   let activeSlide = 0;
-  console.log({"activeSlide": activeSlide});
   let dots = document.querySelector(".dots");
   let navDots = [];
   let iw = window.innerWidth;
@@ -184,7 +176,9 @@ if (container) {
 
   // set slides background colors and create the nav dots
   for (let i = 0; i < slides.length; i++) {
-    gsap.set(slides[i], {backgroundColor: colorArray[i]});
+    console.log(sliderColorArray);
+    console.log(sliderColorArray[i % sliderColorArray.length]);
+    gsap.set(slides[i], {backgroundColor: `var(${sliderColorArray[i % sliderColorArray.length]})`});
     let newDot = document.createElement("div");
     newDot.className = "dot";
     newDot.index = i;

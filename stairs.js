@@ -1,4 +1,6 @@
 // Desc: An experiment in animating SVG with CSS
+
+// DEPRECATED, moved into main.js.
 import {choc, set_content, on, DOM} from './factory.js';
 const {"svg:a": SVGA, "svg:g": GROUP, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG, "svg:text": SVGTEXT} = choc; //autoimport
 
@@ -8,7 +10,6 @@ function renderWalkingPerson(node) {
     SVG({
       fill: 'none',
       viewBox: '0 0 1600 900',
-      stroke: 'var(--brand-primary)',
       'stroke-width': '4',
       style: 'max-width: 100%; height: auto; border: 1px solid black;',
     }, [
@@ -56,9 +57,9 @@ function renderWalkingPerson(node) {
           })
         ]),
       ]),
-      SVGTEXT({x:'50%', y: 100, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "Enjoy an experiment in"),
-      SVGTEXT({x:'50%', y: 150, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "animating scalable vector "),
-      SVGTEXT({x:'50%', y: 200, style: 'font: 50px monospace;', 'stroke-width': 0, fill: 'var(--brand-primary)', 'max-width': '50%'}, "graphics with CSS.")]) // End SVG
+      SVGTEXT({x:'50%', y: 100, style: 'font: 50px monospace;', 'stroke-width': 0, 'max-width': '50%'}, "Enjoy an experiment in"),
+      SVGTEXT({x:'50%', y: 150, style: 'font: 50px monospace;', 'stroke-width': 0, 'max-width': '50%'}, "animating scalable vector "),
+      SVGTEXT({x:'50%', y: 200, style: 'font: 50px monospace;', 'stroke-width': 0, 'max-width': '50%'}, "graphics with CSS.")]) // End SVG
   );
 }
 
