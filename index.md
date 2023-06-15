@@ -309,26 +309,38 @@ category: hero full-width
 
           <section id=ThinkPeace>
             <h3>Think Peace</h3>
-            <img src="images/thinkpeacehead.png" alt="GreenSock Logo" width="300px">
+            <img src="images/portfolio/thinkpeacehead.png" alt="GreenSock Logo" width="300px">
             <p>This project, build with ReactJS and MongoDB allows users to record wishes sent around the Earth. Audio and video themes created by guest artists respond to the the state of wishes.</p>
           </section>
 
           <section>
             <h3>Elliptica In-Studio App</h3>
-            <img src="images/ellipticainstudio.png" width="800" alt="In-Studio Statistics Screenshot">
+            <img src="images/portfolio/ellipticainstudio.png" width="800" alt="In-Studio Statistics Screenshot">
             <p>A fitness studio needed to display live data from the Keiser elliptical machines of the students and instructor. It utilizes Python Flask, Javascript (and some typescript) dynamic CSS gradients, DOM, WebSocket and WebAudio APIs.</p>
           </section>
 
           <section id="wordpresscoding">
             <h3>Mindbody Wordpress Plugin</h3>
-            <img src="images/mboplugin.png" width="500" alt="Mindbody Plugin Wordpress Page">
+            <img src="images/portfolio/mboplugin.png" width="500" alt="Mindbody Plugin Wordpress Page">
             <p>This nitche plugin, originally utilizing SOAP, and now (thankfully) REST, pulls in schedule and instructor data from the Mindbody Online account of the administrator. It also supports extension plugins via an Easy Digital Downloads-influenced singleton pattern.</p>
           </section>
 
           <section id="wordpresssite">
             <h3>Baughman Properties Website</h3>
-            <img src="images/baughman.png" width="500" alt="Baughman Properties">
+            <img src="images/portfolio/baughman.png" width="500" alt="Baughman Properties">
             <p>The Roots.io toolset includes Webpack, Ansible and PHP Laravel framework for enterprise level provisioning, deployment and maintenance of projects utilizing the Wordpress framework. The above project, details about rental properties are administratable. We don't specialize in graphic design, but sometimes take on that role. User Experience is, of course, the foundation.</p>
+          </section>
+
+          <section id="storybook">
+            <h3>Storybook Sound Markdown Website</h3>
+            <img src="images/portfolio/storybook.png" width="500" alt="Storybook Sound screenshot">
+            <p>Jekyll is a tool written in Ruby, with which static .html pages can be managed dynamically without the need for a database. With this project, we wanted to showcase a vast number of artists and projects as well as conveying a sense of the atmosphere of this boutique, high-end mastering and recording studio.</p>
+          </section>
+
+          <section id="blinkwellness">
+            <h3>Blink Wellness Wordpress Plugin</h3>
+            <img src="images/portfolio/blinkwellness.png" width="500" alt="Blink Wellness Screenshot">
+            <p>We were tasked with building a re-purposable interface similar to the previously mentioned Mindbody Wordpress plugin, but with a robust user registration, purchasing and marketing feature.</p>
           </section>
 
           <section id=walkingPerson>
