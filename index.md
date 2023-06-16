@@ -279,7 +279,7 @@ category: hero full-width
 
   <section id=about>
   <h2>About Brownsville Digital</h2>
-    <p>Well, we is mostly me, Mike Kilmer, but I have a few other amazing people I work with, depending on the project: Chris is a masterful coder in pretty much any of the languages noted above, Tom is a festidious art director and frontend dev, Shafiq specializes in Wordpress, Prashant concentrates on mobile apps and things like fire-retardent fabrics.</p>
+    <p>Well, we is mostly me, Mike Kilmer, but I have a few other amazing people I work with, depending on the project: Chris is a masterful coder in pretty much any of the languages noted above, Tom is a fastidious art director and frontend dev, Shafiq specializes in Wordpress, Prashant concentrates on mobile apps and things like fire-retardant fabrics.</p>
     <p>I'm passionate about communication including music, community development, writing, user experience design and, of course, coding. I've been doing this since nineteen-ninety-six, and seem to be getting good at it.</p>
   </section>
 
@@ -349,7 +349,7 @@ category: hero full-width
           <section id="wordpresscoding">
             <h3>Mindbody Wordpress Plugin</h3>
             <img src="images/portfolio/mboplugin.png" width="500" alt="Mindbody Plugin Wordpress Page">
-            <p>This nitche plugin, originally utilizing SOAP, and now (thankfully) REST, pulls in schedule and instructor data from the Mindbody Online account of the administrator. It also supports extension plugins via an Easy Digital Downloads-influenced singleton pattern.</p>
+            <p>This niche plugin, originally utilizing SOAP, and now (thankfully) REST, pulls in schedule and instructor data from the Mindbody Online account of the administrator. It also supports extension plugins via an Easy Digital Downloads-influenced singleton pattern.</p>
           </section>
 
           <section id="wordpresssite">
