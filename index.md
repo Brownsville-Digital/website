@@ -355,7 +355,7 @@ category: hero full-width
           <section id="wordpresssite">
             <h3>Baughman Properties Website</h3>
             <img src="images/portfolio/baughman.png" width="500" alt="Baughman Properties">
-            <p>The Roots.io toolset includes Webpack, Ansible and PHP Laravel framework for enterprise level provisioning, deployment and maintenance of projects utilizing the Wordpress framework. The above project, details about rental properties are administratable. We don't specialize in graphic design, but sometimes take on that role. User Experience is, of course, the foundation.</p>
+            <p>The Roots.io toolset includes Webpack, Ansible and PHP Laravel framework for enterprise level provisioning, deployment and maintenance of projects utilizing the Wordpress framework. The above project, details about rental properties are administrable. We don't specialize in graphic design, but sometimes take on that role. User Experience is, of course, the foundation.</p>
           </section>
 
           <section id="storybook">
