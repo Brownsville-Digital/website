@@ -21,6 +21,7 @@ on('click', '#downarrow', function (event) {
 });
 
 on('click', ".menu", function (event) {
+  event.preverntDefault();
   burgerClick();
   switch (event.target.id) {
     case 'steps':
