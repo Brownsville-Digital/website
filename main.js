@@ -2,6 +2,20 @@
 import {choc, set_content, on, DOM} from './factory.js';
 const {H1, "svg:a": SVGA, "svg:g": GROUP, "svg:circle": CIRCLE, "svg:path": PATH, "svg:svg": SVG, "svg:text": SVGTEXT} = choc; //autoimport
 
+window.onscroll = function () {
+  checkScroll();
+}
+
+function checkScroll() {
+  if (window.scrollY > 500) {
+    document.getElementById('scrollToTop').style.opacity = '0.5';
+  }
+
+  if (window.scrollY < 100) {
+    document.getElementById('scrollToTop').style.opacity = '0';
+  }
+}
+
 on('click', '#downarrow', function (event) {
   event.match.closest('section').nextElementSibling.scrollIntoView({ behavior: "smooth" });
 });
@@ -22,7 +36,7 @@ on('click', ".menu", function (event) {
       DOM("#contact-info").scrollIntoView({behavior: "smooth"});
       break;
     default:
-      DOM("#home").scrollIntoView({ behavior: "smooth" });
+      DOM("header").scrollIntoView({ behavior: "smooth" });
   }
 
 });
@@ -35,6 +49,10 @@ const burgerClick = function () {
 }
 
 on("click", "#hamburger", burgerClick);
+
+on('click', '#scrollToTop', function (event) {
+  DOM("header").scrollIntoView({behavior: "smooth"});
+});
 
 function renderWalkingPerson(node) {
   return node.appendChild(
@@ -112,7 +130,7 @@ tl.from('#downarrow', {duration: 2, fill: "var(--brand-secondary)", opacity: 0, 
 new IntersectionObserver(function (entries) {
   if (entries[0].isIntersecting) {
     setTimeout(() => {
-        document.getElementById('themap').style.display = 'inline';
+      document.getElementById('themap').style.display = 'inline';
         var tl2 = new gsap.timeline();
         const mapCircles = document.querySelectorAll('#themap circle');
         const mapPaths = document.querySelectorAll('#themap path');
@@ -131,11 +149,11 @@ new IntersectionObserver(function (entries) {
 
 
 new IntersectionObserver(function (entries) {
-    document.getElementById('walkingPerson').classList.toggle('isIntersecting', entries[0].isIntersecting);
-  },
-  {
-    threshold: 0.3,
-  }
+  document.getElementById('walkingPerson').classList.toggle('isIntersecting', entries[0].isIntersecting);
+},
+{
+  threshold: 0.3,
+}
 ).observe(document.getElementById('walkingPerson'));
 
 
