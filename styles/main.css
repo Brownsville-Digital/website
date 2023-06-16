@@ -181,7 +181,7 @@ main svg rect {
 }
 
 /* Hero */
-#hero {
+#home {
   color: var(--brand-primary);
   padding: 4rem 0;
   text-align: center;
@@ -259,7 +259,7 @@ nav .menu a:hover {
   text-decoration: underline;
 }
 
-.hamburger {
+#hamburger {
   position: absolute;
   z-index: 100;
   top: 1rem;
@@ -270,12 +270,12 @@ nav .menu a:hover {
   cursor: pointer;
 }
 
-.hamburger i {
-  color: var(--brand-secondary);
-  font-size: 2rem;
+#hamburger svg {
+  fill: var(--brand-secondary);
+  stroke: var(--brand-secondary);
 }
 
-i.closeIcon {
+svg.closeIcon {
   display: none;
 }
 
@@ -292,6 +292,35 @@ i.closeIcon {
   color: var(--brand-secondary);
   list-style: none;
   padding-top: 4rem;
+}
+
+#menumid {
+  opacity: 1;
+  transition: all 0.35s ease-in-out;
+}
+
+#menumid.showMenu {
+  opacity: 0;
+}
+
+#menutop,
+#menubot {
+  transition: all 0.35s ease-in-out;
+  transform: rotate(0deg);
+  transform-origin: 20px;
+}
+
+#menutop.showMenu,
+#menubot.showMenu {
+  transition: all 0.35s ease-in-out;
+}
+
+#menutop.showMenu {
+  transform: translateX(-15px) translateY(10px) rotate(45deg);
+}
+
+#menubot.showMenu {
+  transform: translateX(-15px) translateY(4px) rotate(-45deg);
 }
 
 .showMenu {

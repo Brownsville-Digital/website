@@ -2,7 +2,7 @@
 category: hero full-width
 ---
 <script>const portfolio = {{ site.data.portfolio | jsonify }};</script>
-  <section id="hero">
+  <section id="home">
     <h1>Let's Communicate</h1>
     <svg  id=whatsthestory viewBox="0 0 713 87">
     <title>What's the story?</title>
@@ -397,7 +397,7 @@ category: hero full-width
 
 #### Tell us about your project.
 {: #hdg-contact .center}
-  <div class="contact-info">
+  <div id="contact-info">
     <div itemscope itemtype="https://schema.org/Organization">
       <span itemprop="name">Brownsville Digital</span>
     </div>

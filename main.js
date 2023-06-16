@@ -6,6 +6,36 @@ on('click', '#downarrow', function (event) {
   event.match.closest('section').nextElementSibling.scrollIntoView({ behavior: "smooth" });
 });
 
+on('click', ".menu", function (event) {
+  burgerClick();
+  switch (event.target.id) {
+    case 'steps':
+      DOM("#roadmapSection").scrollIntoView({ behavior: "smooth" });
+      break;
+    case 'tools':
+      DOM("#toolset").scrollIntoView({behavior: "smooth"});
+      break;
+    case 'portfolioLink':
+      DOM("#portfolio").scrollIntoView({ behavior: "smooth" });
+      break;
+    case 'contact':
+      DOM("#contact-info").scrollIntoView({behavior: "smooth"});
+      break;
+    default:
+      DOM("#home").scrollIntoView({ behavior: "smooth" });
+  }
+
+});
+
+const burgerClick = function () {
+  DOM(".menu").classList.toggle("showMenu");
+  DOM('#menutop').classList.toggle("showMenu");
+  DOM('#menumid').classList.toggle("showMenu");
+  DOM('#menubot').classList.toggle("showMenu");
+}
+
+on("click", "#hamburger", burgerClick);
+
 function renderWalkingPerson(node) {
   return node.appendChild(
     SVG({

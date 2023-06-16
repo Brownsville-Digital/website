@@ -26,7 +26,6 @@
   <link rel="icon" href="images/favicon.png" sizes="192x192">
   <link rel="apple-touch-icon" href="images/favicon.png">
   <meta name="msapplication-TileImage" content="images/favicon.png">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap');
   </style>
@@ -128,28 +127,28 @@
     <nav>
       <ul class="menu">
         <li>
-          <a class="menuItem" href="#home">Intro</a>
+          <a class="menuItem" id=steps href="#roadmapSection">Steps</a>
         </li>
         <li>
-          <a class="menuItem" href="#what">Details</a>
+          <a class="menuItem" id=tools href="#toolset">Tool Set</a>
         </li>
         <li>
-          <a class="menuItem" href="#how">Steps</a>
+          <a class="menuItem" id=portfolioLink href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a class="menuItem" href="#who">About Us</a>
-        </li>
-        <li>
-          <a class="menuItem" href="#contact">Contact</a>
+          <a class="menuItem" id=contact href="#contact-info">Contact</a>
         </li>
         </li>
       </ul>
     </nav>
 
-    <button class="hamburger">
-      <!-- material icons https://material.io/resources/icons/ -->
-      <i class="menuIcon material-icons">menu</i>
-      <i class="closeIcon material-icons">close</i>
+    <button id="hamburger">
+      <svg viewBox="0 0 99 99" width="40" height="40">
+        <line id="menutop" x1="5" y1="15" x2="94" y2="15" stroke-width="13" stroke-linecap="square"></line>
+        <line id="menumid" x1="5" y1="50" x2="94" y2="50" stroke-width="13" stroke-linecap="square"></line>
+        <line id="menubot" x1="5" y1="84" x2="94" y2="84" stroke-width="13" stroke-linecap="square"></line>
+      </svg>
+
     </button>
   </header>
   <main>
@@ -161,33 +160,6 @@
         href="mailto:info@brownsvilledigital.com" title="https://brownsvilledigital.com">info@brownsvilledigital.com</a>
     </p>
   </footer>
-  <script>
-    const menu = document.querySelector("nav .menu");
-    const menuItems = document.querySelectorAll(".menuItem");
-    const hamburger = document.querySelector(".hamburger");
-    const closeIcon = document.querySelector(".closeIcon");
-    const menuIcon = document.querySelector(".menuIcon");
-
-    function toggleMenu() {
-      if (menu.classList.contains("showMenu")) {
-        menu.classList.remove("showMenu");
-        closeIcon.style.display = "none";
-        menuIcon.style.display = "block";
-      } else {
-        menu.classList.add("showMenu");
-        closeIcon.style.display = "block";
-        menuIcon.style.display = "none";
-      }
-    }
-
-    hamburger.addEventListener("click", toggleMenu);
-
-    menuItems.forEach(
-      function (menuItem) {
-        menuItem.addEventListener("click", toggleMenu);
-      }
-    )
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.11/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.11/dist/Draggable.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
