@@ -86,6 +86,12 @@ section {
   padding: 3em;
 }
 
+#home {
+  background-image: linear-gradient(to bottom,
+      var(--brand-secondary-light),
+      var(--highlight));
+}
+
 .site-logo svg {
   fill: var(--brand-secondary);
   stroke: var(--brand-secondary);
@@ -405,12 +411,12 @@ section#portfolio {
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 9px;
   border-radius: 100%;
   position: relative;
   background-color: var(--brand-secondary);
-  margin: 12px 8px;
+  margin: 9px 4px;
   cursor: pointer;
   float: left;
 }
@@ -711,6 +717,13 @@ p::first-letter {
 
 
 @media (min-width: 768px) {
+
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    margin: 12px 8px;
+  }
 
   #roadmapSection #roadmapElements svg {
     width: 330px;

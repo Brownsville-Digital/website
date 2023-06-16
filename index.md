@@ -250,10 +250,17 @@ category: hero full-width
 
   <section id=toolset>
   <h2>Decisions, Decisions</h2>
+  <h3>If it <em>actually is</em> a nail, what kind of hammer should we use?</h3>
   <div class=tools markdown=1>
   ![php](images/devtools/PHP-logo.svg) ![python](images/devtools/python-powered-w.svg) ![ecmascript](images/devtools/es2015-ecmascript-logo.svg) ![javascript](images/devtools/Unofficial_JavaScript_logo_2.svg) ![HTML5](images/devtools/HTML5_logo_and_wordmark.svg) ![css](images/devtools/CSS3_logo_and_wordmark.svg) ![Django](images/devtools/Django_logo.svg) ![Laravel](images/devtools/Laravel.svg) ![Flask](images/devtools/Flask_logo.svg) ![AWS](images/devtools/Amazon_Web_Services_Logo.svg) ![Node](images/devtools/Node.js_logo.svg) ![React](images/devtools/React-icon.svg) ![webpack](images/devtools/logo-on-white-bg.svg) ![Wordpress](images/devtools/WordPress_logo.svg) ![git](images/devtools/Git-logo.svg) ![sass](images/devtools/Sass_Logo_Color.svg) ![Bootstrap](images/devtools/Bootstrap_logo.svg) ![Tailwind](images/devtools/Tailwind_CSS_Logo.svg) ![FLutter](images/devtools/Google-flutter-logo.svg) ![Ansible](images/devtools/Ansible_logo.svg) ![Mindbody](images/devtools/Mindbody.svg)
   </div>
 
+  </section>
+
+  <section id=about>
+  <h2>About Brownsville Digital</h2>
+    <p>Well, we is mostly me, Mike Kilmer, but I have a few other amazing people I work with, depending on the project: Chris is a masterful coder in pretty much any of the languages noted above, Tom is a festidious art director and frontend dev, Shafiq specializes in Wordpress, Prashant concentrates on mobile apps and things like fire-retardent fabrics.</p>
+    <p>I'm passionate about communication including music, community development, writing, user experience design and, of course, coding. I've been doing this since nineteen-ninety-six, and seem to be getting good at it.</p>
   </section>
 
   <section id=portfolio class="hideMe">
