@@ -119,6 +119,8 @@ section {
   stroke: var(--brand-secondary);
   width: 300px;
   height: auto;
+  /* Don't break on tiny screens */
+  max-width: 60vw;
 }
 
 
