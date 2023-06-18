@@ -415,6 +415,12 @@ section#portfolio {
   position: relative;
 }
 
+section#portfolio h3 {
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+
 
 #sliderWrap {
   width: 100%;
@@ -462,6 +468,7 @@ section#portfolio {
   z-index: 100;
   left: 50%;
   bottom: 16px;
+  visibility: hidden;
 }
 
 #leftArrow {
@@ -515,6 +522,7 @@ section#portfolio {
   font-size: 1em;
   font-weight: 400;
   display: block;
+  visibility: hidden;
 }
 
 
@@ -540,6 +548,7 @@ section#portfolio .titleWrap {
   bottom: 50px;
   left: 50%;
   overflow-y: hidden;
+  visibility: hidden;
 }
 
 section#portfolio .title {
@@ -748,6 +757,24 @@ p::first-letter {
 
   #previouspuzzles {
     width: 20%;
+  }
+}
+
+@media (min-width: 480px) {
+  section#portfolio .titleWrap {
+    visibility: visible;
+  }
+
+  section#portfolio .dots {
+    visibility: visible;
+  }
+
+  section#portfolio h3 {
+    font-size: 1.5em;
+  }
+
+  #portfolio h1 span {
+    visibility: visible;
   }
 }
 
