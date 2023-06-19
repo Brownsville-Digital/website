@@ -114,6 +114,11 @@ section {
 }
 
 
+section:not(#portfolio) {
+  padding: 0.8em 3em 2em;
+}
+
+
 .site-logo svg {
   fill: var(--brand-secondary);
   stroke: var(--brand-secondary);
