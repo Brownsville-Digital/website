@@ -376,6 +376,12 @@ category: hero full-width
             <p>For this project, we went with Django, a robust framework written in Python. It interfaces with Shopify and BigCommerce APIs to automatically track inventory and fulfillment status.</p>
           </section>
 
+          <section id="infiniteglitch">
+            <h3>Infinite Random Music Player</h3>
+            <img src="images/portfolio/glitch.png" width="500" alt="Music Player Screenshot">
+            <p>Flask, written in Python serves it. Javascript and HTML5 play it. Hundreds of minutes of psuedo-randomly mixed musical sections of the (official Guinness Book) longest pop song in the world.</p>
+          </section>
+
           <section id=walkingPerson>
           </section>
 
@@ -408,7 +414,10 @@ category: hero full-width
           8. Warehouse Management
         </div>
         <div class="title">
-          9. A CSS SVG Experiment
+          9. Infinite Music Player
+        </div>
+        <div class="title">
+          10. A CSS SVG Experiment
         </div>
       </div> <!-- End titleWrap -->
     </div>  <!-- End slider -->
