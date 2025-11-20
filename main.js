@@ -117,7 +117,9 @@ function renderWalkingPerson(node) {
   );
 }
 
-renderWalkingPerson(document.querySelector("#walkingPerson"));
+const walker = document.querySelector("#walkingPerson");
+console.log(walker);
+walker && renderWalkingPerson(walker);
 
 const tl = gsap.timeline();
 //tl.from('#whatsthestory path', {duration: 0.4, stagger: 0.2, fill: "var(--brand-secondary)", opacity: 0, y: "random(-150, 150)", ease: "bounce"});
