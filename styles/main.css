@@ -42,12 +42,15 @@ h1 {
 h2 {
   font-size: 2em;
   font-weight: 700;
-  text-align: center;
 }
 
 h3 {
   font-size: 1.5em;
   font-weight: 700;
+}
+
+body.hero h2,
+body.hero h3 {
   text-align: center;
 }
 
@@ -97,7 +100,7 @@ footer {
   text-align: center;
 }
 
-main {
+body.hero main {
   background: var(--brand-secondary-light);
   margin: 0;
 }
@@ -108,16 +111,41 @@ header {
 
 
 
-section {
+body.hero section {
   margin: 0;
+}
+
+section {
   padding: 0 3em;
 }
 
-
-section:not(#portfolio) {
+body.hero section:not(#portfolio) {
   padding: 0.8em 3em 2em;
 }
 
+p:has(code),
+p:has(pre) {
+  max-width: unset;
+  margin: unset;
+}
+
+pre.highlight,
+code.highlighter-rouge {
+  max-width: 90vw;
+  overflow: scroll;
+  background-color: #ccc;
+}
+
+pre.highlight {
+  padding: 0.5em;
+}
+
+code.highlighter-rouge {
+  max-width: 90vw;
+  overflow: scroll;
+  background-color: #ccc;
+  padding: 0.05em;
+}
 
 .site-logo svg {
   fill: var(--brand-secondary);
@@ -614,7 +642,7 @@ section#portfolio p {
   overflow: visible;
 }
 
-p::first-letter {
+body.hero p::first-letter {
   font-size: larger;
   text-transform: uppercase;
 }
