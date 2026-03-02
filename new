@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+import sys
+from datetime import datetime
+import subprocess
+
+date = datetime.today().strftime('%Y-%m-%d')
+title = sys.argv[1] if len(sys.argv) > 1 else 'untitled'
+permalink_title = title.replace(' ', '-').lower() if len(sys.argv) > 1  else 'untitled'
+filename = '_posts/' + date + '-' + permalink_title + '.md'
+template = '''\
+---
+title: {title}
+date: {date}
+author: 'Mike iLL Kilmer'
+layout: post
+permalink: /{dateFormatted}/{permalink_title}
+categories:
+    - 'Uncategorized'
+---
+'''
+with open(filename, 'w') as new:
+  new.write(template.format(
+    title=title,
+    permalink_title=permalink_title,
+    date=date if date else 'No Date',
+    dateFormatted=date.replace('-','/') if date else 'No Date',
+  ))
+print('Created %s' % filename)
+subprocess.Popen("open -a 'Visual Studio Code.app' " + filename, shell=True)
+subprocess.Popen("git add " + filename, shell=True)
