@@ -56,3 +56,101 @@ True
 0x8 == 0b1000
 True
 ```
+
+You can do the same thing with any base for example base-16 you'd divide by 16 and get the remainder:
+
+```python
+>>> 325 / 16; 325 % 16
+20.3125
+5
+>>> 20 / 16; 20 % 16
+1.25
+4
+>>> 1 / 16; 1 % 16
+0.0625
+1
+>>> 0x145
+325
+```
+
+Or to hide the unwieldy remaining decimals
+```python
+>>> int(325 / 16);325 % 16
+20
+5
+#etc...
+```
+
+Or cleaner yet:
+
+```python
+>>> divmod(325,16)
+(20, 5)
+>>> divmod(20,16)
+(1, 4)
+>>> divmod(1,16)
+(0, 1)
+```
+
+Without the handy modulo operator (`%`) you can calculate the remainder mathematically thus:
+
+```numerator - (quotient * denominator) = remainder```
+
+For example `20 - (16 * 1) = 4`.
+
+Floats are by their nature binary, Rosuav tells me:
+
+Python
+```python
+>>> (2.75).as_integer_ratio()
+(11, 4)
+>>> 11/4
+2.75
+```
+
+And that "You'll always find that the denominator of the fraction is a power of two.":
+
+```python
+>>> (0.2).as_integer_ratio()
+(3602879701896397, 18014398509481984)
+# checking
+>>> bin(18014398509481984)
+'0b1000000000000000000000000000000000000000000000000000000'
+```
+
+A power of two in binary has exactly one bit set to 1.
+
+The following fragment uses bitwise AND to check if a number is a power of 2:
+
+```python
+def is_power_of_two(n):
+    return n > 0 and (n & (n - 1)) == 0
+
+# Example Usage
+number = int(input("Enter a number: "))
+if is_power_of_two(number):
+    print(f"{number} is a power of two.")
+else:
+    print(f"{number} is not a power of two.")
+```
+
+Apparently subtracting 1 from a number flips all the bits after the rightmost set bit (including the set bit itself), making the result 0 when ANDed with the original number. Let's check that:
+
+```python
+>>> bin(128)
+'0b10000000'
+>>> bin(128-1)
+'0b1111111'
+>>> bin(8)
+'0b1000'
+>>> bin(8-1)
+'0b111'
+>>> bin(2)
+'0b10'
+>>> bin(2-1)
+'0b1'
+```
+
+Ah yes that makes sense because when the value goes down by one from the initial value of a right-most column the result is one less column and each of the remaining ones at max. So the values associated with each of the byte columns themselves (`1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024` etc...) are the successive powers of 2.
+
+Nerd out!
