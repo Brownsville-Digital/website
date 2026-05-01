@@ -1,3 +1,13 @@
+---
+title: Hacker Tools
+date: 2026-04-20
+author: 'Mike iLL Kilmer'
+layout: post
+permalink: /2026/04/20/useful-hacker-tools
+categories:
+    - 'Uncategorized'
+---
+
 # Useful Tools
 
 | Tool Name          | Platform                | Type              |    website                        | Description |

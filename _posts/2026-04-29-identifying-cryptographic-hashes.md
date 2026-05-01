@@ -1,3 +1,13 @@
+---
+title: Cryptographic Hash Types by Sight
+date: 2026-04-29
+author: 'Mike iLL Kilmer'
+layout: post
+permalink: /2026/04/29/crypotographic-hash-types-by-sight
+categories:
+    - 'Uncategorized'
+---
+
 # Identifying Cryptographic Hash Types by Sight
 
 original source: [pete on software com](https://www.peteonsoftware.com/index.php/2024/10/03/identifying-cryptographic-hashes)
