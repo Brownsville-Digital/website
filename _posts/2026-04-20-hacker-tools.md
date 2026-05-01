@@ -85,3 +85,4 @@ categories:
 | tree | linux | cmd | https://www.man7.org/linux/man-pages/man1/tree.1.html | tree - list contents of directories in a tree-like format. |
 | Python cryptography | any | package (pip) | https://github.com/pyca/cryptography | cryptographic recipes and primitives for Python |
 | Black Hills InfoSec Hashcat cheatsheet | any | website | https://www.blackhillsinfosec.com/hashcat-cheatsheet | They also have some cool ebooks and training available |
+| Open Wall Wordlists | any | inexpensive commercial resource | https://www.openwall.com/wordlists | For about thirty dollars support open wall and get tons of words for brute forcing. |
