@@ -57,3 +57,5 @@ Cruzer U:
                   Content: Microsoft Basic Data
                   ```
 The section labeled `disk4s2` at the bottom seems to correspond to the file pointer at `/dev/`
+
+more later...
