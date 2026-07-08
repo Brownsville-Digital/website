@@ -110,3 +110,7 @@ Some variants are:
 - SATA Express - SATA Express, initially standardized in the SATA 3.2 specification,[75] is an interface that supports either SATA or PCI Express storage devices. The host connector is backward compatible with the standard 3.5-inch SATA data connector, allowing up to two legacy SATA devices to connect.
 - M.2 (NGFF) - M.2, formerly known as the Next Generation Form Factor (NGFF), is a specification for computer expansion cards and associated connectors. It replaces the mSATA standard, which uses the PCI Express Mini Card physical layout.
 - U.2 (SFF-8639) - U.2, formerly known as SFF-8639. Like M.2, it carries a PCI Express electrical signal, however U.2 uses a PCIe 3.0 ×4 link providing a higher bandwidth of 32 Gbit/s in each direction. In order to provide maximum backward compatibility the U.2 connector also supports SATA and multi-path SAS.
+
+## Lagacy Ports
+
+There is of course a [Wikipedia entry on legacy ports](https://en.wikipedia.org/wiki/Legacy_port) like PS/2 port / 6-pin mini-DIN and some of the others listed above.
