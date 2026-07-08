@@ -14,6 +14,14 @@ Most of the periferal device connectors listed below are keyed connectors. A key
 
 Connectors are listed chronologically.
 
+## Coaxial Cable
+
+[Coaxial cable](https://en.wikipedia.org/wiki/Coaxial_cable) or "coax" was first made in the early-mid 1800's and used in the Trans-Atlantic pipeline. Oliver Heaviside received a patent for it in 1880. In geometry, coaxial means that several three-dimensional linear or planar forms share a common axis.
+
+Coax cable consists of a central core traditionally of copper surrounded by an inner dielectric insulator (In electromagnetism, a dielectric (or dielectric medium) is an electrical insulator that can be polarised by an applied electric field. When a dielectric material is placed in an electric field, electric charges do not flow through the material as they do in an electrical conductor, because they have no loosely bound, or free, electrons that may drift through the material, but instead they shift, only slightly, from their average equilibrium positions, causing dielectric polarisation.) then a woven copper shield and finally an outer plastic sheath.
+
+The medium is still widely utilized as a transmission line for radio frequency signals. Its applications include feedlines connecting radio transmitters and receivers to their antennas, computer network (e.g., Ethernet) connections, digital audio (S/PDIF), and distribution of cable television signals.
+
 ## RS-232
 
 Back in 1960 [Recommended Standard 232](https://en.wikipedia.org/wiki/RS-232) was introduced for the transfer of data (and very low voltage power) between a DTE (data terminal equipment) such as a computer terminal or PC, and a DCE (data circuit-terminating equipment or data communication equipment), such as a modem.
@@ -79,3 +87,26 @@ DisplayPort connectors are recognizable by their asymmetrical keying.
 Unlike older interfaces, DisplayPort uses packet-based transmission, similar to how data is sent over USB or Ethernet. The design enables support for high resolutions and adding new features without changing the connector.
 
 DisplayPort includes an auxiliary data channel used for device control and automatic configuration between source and display devices. It supports standards such as Display Data Channel (DDC), Extended Display Identification Data (EDID), Monitor Control Command Set (MCCS), and VESA Display Power Management Signaling (DPMS). Some implementations also support Consumer Electronics Control (CEC), which allows devices to send commands to each other and be operated using a single remote control.
+
+## Device Interior Cables
+
+### PATA (legacy)
+
+[Parallel ATA (PATA)](https://en.wikipedia.org/wiki/Parallel_ATA), originally AT Attachment, also known as Integrated Drive Electronics (IDE), is a standard interface designed for IBM PC-compatible computers. It was first developed by Western Digital and Compaq in 1986 for compatible hard drives and CD or DVD drives. The connection is used for computer storage such as hard disks, high-capacity floppy disk variants, optical disks, and tape.
+
+### SATA (Serial AT [Advanced Technology] Attachment)
+[SATA](https://en.wikipedia.org/wiki/SATA) specification from the Serial ATA Working Group in 2000 is a serial bus designed for transmission to and from mass storage devices (primarily hard drives).
+
+SATA uses a point-to-point architecture. The physical connection between a controller and a storage device is not shared among other controllers and storage devices. SATA defines multipliers, which allows a single SATA controller port to drive up to fifteen storage devices. The multiplier performs the function of a hub; the controller and each storage device is connected to the hub.[84] This is conceptually similar to SAS expanders.
+
+Modern PC systems have SATA controllers built into the motherboard, typically featuring two to eight ports. Additional ports can be installed through add-in SATA host adapters (available in variety of bus-interfaces: USB, PCI, PCIe).
+
+Some variants are:
+
+- eSATA - Standardized in 2004, eSATA (e standing for external) provides a variant of SATA meant for external connectivity.
+- eSATAp - for powered eSATA
+- Mini-SATA (mSATA) - Mini-SATA (abbreviated as mSATA), which is distinct from the micro connector,[61] was announced by the Serial ATA International Organization on September 21, 2009.[71] Applications include netbooks, laptops and other devices that require a solid-state drive in a small footprint.
+- SFF-8784 connector - Slim 2.5-inch SATA devices, 5 mm (0.20 inches) in height, use the twenty-pin SFF-8784 edge connector to save space. By combining the data signals and power lines into a slim connector that effectively enables direct connection to the device's printed circuit board (PCB) without additional space-consuming connectors, SFF-8784 allows further internal layout compaction for portable devices such as ultrabooks.
+- SATA Express - SATA Express, initially standardized in the SATA 3.2 specification,[75] is an interface that supports either SATA or PCI Express storage devices. The host connector is backward compatible with the standard 3.5-inch SATA data connector, allowing up to two legacy SATA devices to connect.
+- M.2 (NGFF) - M.2, formerly known as the Next Generation Form Factor (NGFF), is a specification for computer expansion cards and associated connectors. It replaces the mSATA standard, which uses the PCI Express Mini Card physical layout.
+- U.2 (SFF-8639) - U.2, formerly known as SFF-8639. Like M.2, it carries a PCI Express electrical signal, however U.2 uses a PCIe 3.0 ×4 link providing a higher bandwidth of 32 Gbit/s in each direction. In order to provide maximum backward compatibility the U.2 connector also supports SATA and multi-path SAS.
