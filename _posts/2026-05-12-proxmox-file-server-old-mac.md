@@ -8,7 +8,9 @@ categories:
     - 'Uncategorized'
 ---
 
-## First make a bootable Debian usb:
+## NOTE don't follow along without reading full post as some failed attempts are also documented.
+
+### First make a bootable Debian usb:
 
 - download an ISO from Debian.
 - format the USB if not already formatted I used ExFat to be crossplatform friendly. With a GUID partition scheme.
@@ -18,7 +20,7 @@ categories:
 - `system_profiler SPUSBDataType` is also interesting
 - - however [this](https://stackoverflow.com/a/78235224/2223106) was not working for me
 - - The output of the above command I will post below this list with commentary
-- `dd if=debian-live-13.4.0-amd64-xfce.iso of=/dev/disk4s2 bs=4M; sync` where `if` is the input file and `of` is the output file pointer. `bs` is the block size.
+- `dd if=debian-live-13.4.0-amd64-xfce.iso of=/dev/disk4s2 bs=4M; sync` where `if` is the input file, `of` is the output file pointer, `bs` is the block size and `sync` is a directive to "Pad every input block to the input buffer size.  Spaces are used for pad bytes if a block oriented conversion value is specified, otherwise NUL bytes are used."
 - - time for a meal break (at least at `4M` block sizes).
 
 ```
@@ -58,4 +60,12 @@ Cruzer U:
                   ```
 The section labeled `disk4s2` at the bottom seems to correspond to the file pointer at `/dev/`
 
-more later...
+### more later...
+
+So the ExFat disk format was not legible to the late 2013 Powerbook so second attempt used Mac Extended (journaled) which apparently _can_ be read also by Linux.
+
+Sure is slow. Bigger block size next time perhaps:
+
+> The recommended block size for the dd command typically ranges from 64K to 16M, depending on your specific hardware and use case. It's best to start with a block size that is a multiple of your disk's physical block size for optimal performance.
+
+There is some further discussion [here](https://superuser.com/questions/234199/good-block-size-for-disk-cloning-with-diskdump-dd). UPDATE tried `32m` block size as well and still a slow process.
