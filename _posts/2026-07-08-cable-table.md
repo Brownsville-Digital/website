@@ -41,8 +41,8 @@ Table to help with recognition of various types of cables for connecting to peri
     <tr>
       <td>USB (All standards)</td><td><img src="/images/posts/cables/USB.png" alt="USB connection shapes"></td>
       <td>Power and data over moderate immediate distances</td>
-      <td></td>
-      <td></td>
+      <td>Ubiquitous and universal</td>
+      <td>rectangles, squares with roofs and little flat things, some un-keyed.</td>
     </tr>
     <tr>
       <td>VGA</td><td><img src="/images/posts/cables/500px-Vga-cable.jpg" alt="VGA cables"></td>
