@@ -26,44 +26,44 @@ Table to help with recognition of various types of cables for connecting to peri
   <tbody>
     <tr>
       <td>Ethernet</td>
-      <td markdown="1">![Ethernet RJ-45 cables](/images/posts/cables/Rjxx.jpg)</td>
+      <td><img src="/images/posts/cables/Rjxx.jpg" alt="Ethernet RJ-45 cables"></td>
       <td>Evolved from telephone twisted-pair cables and primarily used in network connections</td>
       <td>fast and universal with support for fair distances</td>
       <td>plastic tab on square/rectangular housing with six pins/wires</td>
     </tr>
     <tr>
       <td>HDMI</td>
-      <td markdown=1>![HDMI connector](/images/posts/cables/500px-HDMI-Connector.jpg)</td>
+      <td><img src="/images/posts/cables/500px-HDMI-Connector.jpg" alt="HDMI connector"></td>
       <td>Digital audio and video</td>
       <td>Fast parallel connectivity</td>
       <td>Near-rectangular end like two matching lopsided letter Ms facing one another</td>
     </tr>
     <tr>
-      <td>USB (All standards)</td><td markdown=1>![USB connection shapes](/images/posts/cables/USB.png)</td>
+      <td>USB (All standards)</td><td><img src="/images/posts/cables/USB.png" alt="USB connection shapes"></td>
       <td>Power and data over moderate immediate distances</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>VGA</td><td markdown=1>![VGA cables](/images/posts/cables/500px-Vga-cable.jpg)</td>
+      <td>VGA</td><td><img src="/images/posts/cables/500px-Vga-cable.jpg" alt="VGA cables"></td>
       <td>Legacy analog audio and video transfer</td>
       <td>Relative universality for a long time</td>
       <td>Plastic handled attachment screws</td>
     </tr>
     <tr>
-      <td>DVI (All standards)</td><td markdown=1>![DVI cables](/images/posts/cables/500px-Dvi-cable.jpg)</td>
+      <td>DVI (All standards)</td><td><img src="/images/posts/cables/500px-Dvi-cable.jpg" alt="DVI cables"></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Fiber Optic Connectors</td><td markdown=1>![Fiber Optic Connector](/images/posts/cables/500px-E2000-Connector.jpg)</td>
+      <td>Fiber Optic Connectors</td><td><img src="/images/posts/cables/500px-E2000-Connector.jpg" alt="Fiber Optic Connector"></td>
       <td>Long distances with very little loss</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Surround Sound</td><td markdown=1>![Sound cables](/images/posts/cables/soundcables.jpg)
+      <td>Surround Sound</td><td><img src="/images/posts/cables/soundcables.jpg" alt="Sound cables">
       <td></td>
       <td></td>
       <td></td>
