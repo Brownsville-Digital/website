@@ -54,6 +54,11 @@ body.hero h3 {
   text-align: center;
 }
 
+body.standard main>section {
+  margin: auto;
+  max-width: 800px;
+}
+
 #scrollToTop {
   position: fixed;
   bottom: 20px;
