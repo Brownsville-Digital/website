@@ -26,7 +26,7 @@ Table to help with recognition of various types of cables for connecting to peri
   <tbody>
     <tr>
       <td>Ethernet</td>
-      <td markdown=1>![Ethernet RJ-45 cables](/images/posts/cables/Rjxx.jpg)</td>
+      <td markdown="1">![Ethernet RJ-45 cables](/images/posts/cables/Rjxx.jpg)</td>
       <td>Evolved from telephone twisted-pair cables and primarily used in network connections</td>
       <td>fast and universal with support for fair distances</td>
       <td>plastic tab on square/rectangular housing with six pins/wires</td>
