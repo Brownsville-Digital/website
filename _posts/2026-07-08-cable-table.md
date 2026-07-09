@@ -63,7 +63,8 @@ Table to help with recognition of various types of cables for connecting to peri
       <td></td>
     </tr>
     <tr>
-      <td>Surround Sound</td><td><img src="/images/posts/cables/soundcables.jpg" alt="Sound cables">
+      <td>Surround Sound</td>
+      <td><img src="/images/posts/cables/soundcables.jpg" alt="Sound cables"></td>
       <td></td>
       <td></td>
       <td></td>
