@@ -69,11 +69,11 @@ Table to help with recognition of various types of cables for connecting to peri
       <td>Small footprint, small cylindrical ends.</td>
     </tr>
     <tr>
-      <td>Surround Sound</td>
+      <td>Audio cables</td>
       <td><img src="/images/posts/cables/soundcables.jpg" alt="Sound cables"></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Mono or stereo analog audio signal</td>
+      <td>Also referred to as a phone cable/connector, these come in 1/4 and 1/8 inch sizes as well as in mono (tip-ring) and stereo (tip-ring-sleeve). The original 1⁄4-inch (6.35 mm) version descends from as early as 1877 in Boston when the first telephone switchboard was installed or 1878, when an early switchboard was used for the first commercial manual telephone exchange.</td>
+      <td>Long and round with a pointy tip and one or two rings just below the head.</td>
     </tr>
   </tbody>
 </table>
