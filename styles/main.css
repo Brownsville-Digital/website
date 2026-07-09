@@ -65,6 +65,10 @@ body.standard main>section {
   height: auto;
 }
 
+.cabletable {
+  border: 1px solid var(--brand-secondary-light);
+}
+
 #scrollToTop {
   position: fixed;
   bottom: 20px;
