@@ -59,6 +59,12 @@ body.standard main>section {
   max-width: 800px;
 }
 
+.cabletable svg,
+.cabletable img {
+  width: 200px;
+  height: auto;
+}
+
 #scrollToTop {
   position: fixed;
   bottom: 20px;
