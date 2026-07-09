@@ -35,8 +35,14 @@ Table to help with recognition of various types of cables for connecting to peri
       <td>HDMI</td>
       <td><img src="/images/posts/cables/500px-HDMI-Connector.jpg" alt="HDMI connector"></td>
       <td>Digital audio and video</td>
-      <td>Fast parallel connectivity</td>
-      <td>Near-rectangular end like two matching lopsided letter Ms facing one another</td>
+      <td>Fast digital transfer compressed and uncompressed. Compatible with DisplayPort.</td>
+      <td>Near-rectangular end connected by two quarter-curves to a shorter long side, like a dragon mouth</td>
+    </tr>
+    <tr>
+      <td>DisplayPort</td><td><img src="/images/posts/cables/500px-Displayport-cable.jpg" alt="DisplayPort"></td>
+      <td>Long distances with very little loss</td>
+      <td>Digital audio and video. Compatible with HDMI.</td>
+      <td>Asymmetrical end - a rectangle with one corner sliced out.</td>
     </tr>
     <tr>
       <td>USB (All standards)</td><td><img src="/images/posts/cables/USB.png" alt="USB connection shapes"></td>
@@ -52,15 +58,15 @@ Table to help with recognition of various types of cables for connecting to peri
     </tr>
     <tr>
       <td>DVI (All standards)</td><td><img src="/images/posts/cables/500px-Dvi-cable.jpg" alt="DVI cables"></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Legacy digital audio and video</td>
+      <td>Superceded by HDMI and DisplayPort</td>
+      <td>Lots of pins in varying rectangular configurations with plastic-handled connection screws</td>
     </tr>
     <tr>
       <td>Fiber Optic Connectors</td><td><img src="/images/posts/cables/500px-E2000-Connector.jpg" alt="Fiber Optic Connector"></td>
       <td>Long distances with very little loss</td>
-      <td></td>
-      <td></td>
+      <td>Transmits data with light. More expensive than many other connection types.</td>
+      <td>Small footprint, small cylindrical ends.</td>
     </tr>
     <tr>
       <td>Surround Sound</td>
