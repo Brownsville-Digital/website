@@ -118,7 +118,7 @@ function renderWalkingPerson(node) {
 }
 
 const walker = document.querySelector("#walkingPerson");
-console.log(walker);
+
 walker && renderWalkingPerson(walker);
 
 const tl = gsap.timeline();
@@ -129,7 +129,7 @@ tl.from('#downarrow', {duration: 2, fill: "var(--brand-secondary)", opacity: 0, 
 // gsap.to("#themap path, #themap circle", {duration: 1, stagger: 1, opacity: 1});
 //tl.from('#budget', {duration: 1, stagger: 0.3, opacity: 0.5, x: "100%", ease: "bounce"});
 
-
+walker &&
 new IntersectionObserver(function (entries) {
   if (entries[0].isIntersecting) {
     setTimeout(() => {
@@ -150,7 +150,7 @@ new IntersectionObserver(function (entries) {
   }
 ).observe(document.getElementById('roadmapSection'));
 
-
+walker &&
 new IntersectionObserver(function (entries) {
   document.getElementById('walkingPerson').classList.toggle('isIntersecting', entries[0].isIntersecting);
 },
@@ -194,7 +194,6 @@ const sliderColorArray = [
 const slides = document.querySelectorAll("#slider section");
 const container = document.querySelector("#slides");
 if (container) {
-  console.log("container exists");
   let dur = 0.5;
   let offsets = [];
   let oldSlide = 0;
