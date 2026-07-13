@@ -20,27 +20,42 @@ on('click', '#downarrow', function (event) {
   event.match.closest('section').nextElementSibling.scrollIntoView({ behavior: "smooth" });
 });
 
+const homepageSections = {
+  'steps': '#roadmapSection',
+  'tools': '#toolset',
+  'portfolioLink': '#portfolio',
+  'contact': '#contact-info',
+  'blog': 'blog',
+}
+
 on('click', ".menu", function (event) {
   event.preventDefault();
-  burgerClick();
-  switch (event.target.id) {
-    case 'steps':
-      DOM("#roadmapSection").scrollIntoView({ behavior: "smooth" });
-      break;
-    case 'tools':
-      DOM("#toolset").scrollIntoView({behavior: "smooth"});
-      break;
-    case 'portfolioLink':
-      DOM("#portfolio").scrollIntoView({ behavior: "smooth" });
-      break;
-    case 'contact':
-      DOM("#contact-info").scrollIntoView({behavior: "smooth"});
-      break;
-      case 'blog':
-      window.location.href = "\\blog";
+  if (window.location.pathname !== '/') {
+    let url = '/';
+    if (event.target.id) {
+      window.location.href = url + homepageSections[event.target.id];
+    }
+  } else {
+    burgerClick();
+    switch (event.target.id) {
+      case 'steps':
+        DOM("#roadmapSection").scrollIntoView({behavior: "smooth"});
         break;
-    default:
-      DOM("header").scrollIntoView({ behavior: "smooth" });
+      case 'tools':
+        DOM("#toolset").scrollIntoView({behavior: "smooth"});
+        break;
+      case 'portfolioLink':
+        DOM("#portfolio").scrollIntoView({behavior: "smooth"});
+        break;
+      case 'contact':
+        DOM("#contact-info").scrollIntoView({behavior: "smooth"});
+        break;
+      case 'blog':
+        window.location.href = "\\blog";
+        break;
+      default:
+        DOM("header").scrollIntoView({behavior: "smooth"});
+    }
   }
 
 });
@@ -121,7 +136,7 @@ function renderWalkingPerson(node) {
 }
 
 // Stuff for index screen only
-if (['','stairs'].includes(window.location.href.split('/')[3])) {
+if (['/','/stairs'].includes(window.location.pathname)) {
   const walker = document.querySelector("#walkingPerson");
 
   walker && renderWalkingPerson(walker);
@@ -134,7 +149,7 @@ if (['','stairs'].includes(window.location.href.split('/')[3])) {
   // gsap.to("#themap path, #themap circle", {duration: 1, stagger: 1, opacity: 1});
   //tl.from('#budget', {duration: 1, stagger: 0.3, opacity: 0.5, x: "100%", ease: "bounce"});
 
-  walker &&
+  walker && document.getElementById('roadmapSection') &&
     new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting) {
         setTimeout(() => {
