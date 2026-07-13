@@ -36,6 +36,9 @@ on('click', ".menu", function (event) {
     case 'contact':
       DOM("#contact-info").scrollIntoView({behavior: "smooth"});
       break;
+      case 'blog':
+      window.location.href = "\\blog";
+        break;
     default:
       DOM("header").scrollIntoView({ behavior: "smooth" });
   }
