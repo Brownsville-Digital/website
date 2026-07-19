@@ -59,18 +59,14 @@ body.standard main>section {
   max-width: 800px;
 }
 
-.cabletable svg,
+table td,
+table {
+  border: 1px solid var(--brand-secondary-light);
+}
+
 .cabletable img {
   width: 200px;
   height: auto;
-}
-
-.cabletable {
-  border: 1px solid var(--brand-secondary-light);
-}
-
-.cabletable td {
-  border: 1px solid var(--brand-secondary-light);
 }
 
 #scrollToTop {
