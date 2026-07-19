@@ -8,4 +8,6 @@ categories:
     - 'Uncategorized'
 ---
 
-![Power and cooling](images/posts/Power&Cooling.svg)
+![Power and cooling](/images/posts/Power&Cooling.svg)
+
+## [See the full vector](/images/posts/Power&Cooling.svg)
