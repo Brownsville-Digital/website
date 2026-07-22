@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1024 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Layer1">
+    </g>
+    <g transform="matrix(1,0,0,1,474.768,277.146)">
+        <text x="170.766px" y="139.512px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Control Unit</text>
+        <text x="240.082px" y="139.512px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">: <tspan x="246.533px 253.863px " y="139.512px 139.512px ">Th</tspan>e control unit manages the CPU by sending signals</text>
+        <text x="170.766px" y="151.905px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">like clock, hold, and reset to its parts. It ensures all components work</text>
+        <text x="170.766px" y="164.297px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">together to complete tasks. For example synchronizing data</text>
+        <text x="170.766px" y="176.69px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">movement from cache memory to the <tspan x="372.176px 380.18px " y="176.69px 176.69px ">AL</tspan>U.</text>
+        <text x="170.766px" y="201.083px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Arithmetic and Logic Unit (ALU)</text>
+        <text x="352.758px" y="201.083px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">: <tspan x="359.209px 366.539px " y="201.083px 201.083px ">Th</tspan>e <tspan x="382.559px 390.562px " y="201.083px 201.083px ">AL</tspan>U handles arithmetic</text>
+        <text x="170.766px" y="213.475px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">tasks (e.g., addition, subtraction, multiplication, division) and logical</text>
+        <text x="170.766px" y="225.868px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">tasks (like <tspan x="226.781px 234.785px " y="225.868px 225.868px ">AN</tspan>D, OR, comparisons). It uses addition for</text>
+        <text x="463.535px" y="225.868px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:12px;">all</text>
+        <text x="170.766px" y="238.26px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:12px;">calculations</text>
+        <text x="233.467px" y="238.26px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">, e.g., solving 2×3 as 2+2+2=6.</text>
+        <text x="170.766px" y="262.653px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Memory Unit</text>
+        <text x="243.439px" y="262.653px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">: <tspan x="249.891px 257.221px " y="262.653px 262.653px ">Th</tspan>e memory unit stores data and instructions. Older</text>
+        <text x="170.766px" y="275.045px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">CPUs used registers, but modern ones also have fast cache</text>
+        <text x="170.766px" y="287.438px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">memory<tspan x="213.211px 216.545px 219.662px 226.992px " y="287.438px 287.438px 287.438px 287.438px ">. Th</tspan>e CPU fetches data from RAM, ROM, or hard disks and</text>
+        <text x="170.766px" y="299.831px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">stores it in registers or cache during tasks.</text>
+    </g>
+    <g transform="matrix(0.96848,0,0,1.00781,270.434,116.422)">
+        <path d="M438.487,52.718C438.487,45.655 432.52,39.921 425.17,39.921L33.483,39.921C26.133,39.921 20.165,45.655 20.165,52.718L20.165,250.029C20.165,257.092 26.133,262.826 33.483,262.826L425.17,262.826C432.52,262.826 438.487,257.092 438.487,250.029L438.487,52.718Z" style="fill:rgb(132,137,131);stroke:rgb(31,64,33);stroke-width:3.04px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,268.262,121.636)">
+        <g transform="matrix(1,0,0,0.451229,-9.51705,27.976)">
+            <rect x="44.974" y="62.612" width="372.665" height="126.439" style="fill:rgb(235,235,235);stroke:black;stroke-width:1.29px;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,187.663,16.9153)">
+            <text x="120.945px" y="85.565px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">Reset Circuit</text>
+        </g>
+        <g transform="matrix(1,0,0,1,72.1059,-15.9664)">
+            <text x="115.026px" y="85.559px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Control Unit</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-63.9558,16.9153)">
+            <text x="121.616px" y="85.565px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">Clock Circuit</text>
+        </g>
+        <g transform="matrix(1,0,0,1,65.3921,5.72166)">
+            <text x="121.941px" y="85.565px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">Latch Circuit</text>
+        </g>
+    </g>
+    <g transform="matrix(0.853933,0,0,0.277518,290.167,296.839)">
+        <rect x="44.974" y="62.612" width="372.665" height="126.439" style="fill:rgb(231,217,115);stroke:black;stroke-width:1.58px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,328.009,241.648)">
+        <text x="122.707px" y="85.559px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Memory Unit</text>
+    </g>
+    <g transform="matrix(1,0,0,1,285.74,257.48)">
+        <text x="132.945px" y="85.565px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">Register</text>
+    </g>
+    <g transform="matrix(1,0,0,1,387.131,257.48)">
+        <text x="114.608px" y="85.565px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">Cache Memory</text>
+    </g>
+    <g transform="matrix(1,0,0,1,268.262,121.636)">
+        <g transform="matrix(0.632011,0,0,0.636181,81.3736,50.7727)">
+            <path d="M403.207,141.653C403.207,133.009 396.142,125.991 387.441,125.991L54.517,125.991C45.816,125.991 38.752,133.009 38.752,141.653L38.752,172.977C38.752,181.621 45.816,188.639 54.517,188.639L387.441,188.639C396.142,188.639 403.207,181.621 403.207,172.977L403.207,141.653Z" style="fill:rgb(151,207,238);"/>
+        </g>
+        <g transform="matrix(1,0,0,1,19.2872,11.8693)">
+            <text x="135.08px" y="143.072px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Arithmatic &amp; Logic Unit</text>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,199.75,134.659)">
+        <text x="25.012px" y="189.817px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:36px;">IN</text>
+    </g>
+    <g transform="matrix(-1.83697e-16,1,-1,-1.83697e-16,462.145,252.689)">
+        <path d="M59.615,179.908L66.421,197.353L52.809,197.353L59.615,179.908Z"/>
+    </g>
+    <g transform="matrix(1,0,0,1,700.589,106.956)">
+        <text x="25.012px" y="189.817px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:36px;">OUT</text>
+    </g>
+    <g transform="matrix(-1.83697e-16,1,-1,-1.83697e-16,900.985,224.273)">
+        <path d="M59.615,179.908L66.421,197.353L52.809,197.353L59.615,179.908Z"/>
+    </g>
+    <g transform="matrix(1,0,0,1,425.119,256.207)">
+        <text x="25.012px" y="189.817px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:36px;">RAM</text>
+    </g>
+    <g transform="matrix(1,2.28848e-17,-2.28848e-17,1,409.21,214.128)">
+        <path d="M59.615,179.908L66.421,197.353L52.809,197.353L59.615,179.908Z"/>
+    </g>
+    <g transform="matrix(-1,-1.45349e-16,1.45349e-16,-1,573.312,591.39)">
+        <path d="M59.615,179.908L66.421,197.353L52.809,197.353L59.615,179.908Z"/>
+    </g>
+    <g transform="matrix(0.577719,0,0,1.68926,512.86,-300.901)">
+        <g transform="matrix(1,0,0,1,0.243914,1.14279)">
+            <rect x="537.774" y="204.547" width="328.252" height="133.714" style="fill:rgb(144,50,19);"/>
+        </g>
+        <g transform="matrix(1.73095,0,0,0.591976,492.401,176.486)">
+            <text x="31.838px" y="78.626px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">In electronics, ﬂip-ﬂops and</text>
+            <text x="31.838px" y="91.019px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">latches are circuits that have</text>
+            <text x="31.838px" y="103.411px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">two stable states that can store</text>
+            <text x="31.838px" y="115.804px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">state information – a bistable</text>
+            <text x="31.838px" y="128.197px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">multivibrator<tspan x="96.525px 99.859px 102.977px 110.307px " y="128.197px 128.197px 128.197px 128.197px ">. Th</tspan>e circuit can be</text>
+            <text x="31.838px" y="140.589px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">made to change state by</text>
+            <text x="31.838px" y="152.982px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">signals applied to one or more</text>
+            <text x="31.838px" y="165.374px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">control inputs and will output its</text>
+            <text x="31.838px" y="177.767px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">state. It is the basic storage</text>
+            <text x="31.838px" y="190.16px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">element in sequential logic.</text>
+            <text x="31.838px" y="202.552px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">Flip-ﬂops and latches are</text>
+            <text x="31.838px" y="214.945px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">fundamental building blocks of</text>
+            <text x="31.838px" y="227.337px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">digital electronics systems used</text>
+            <text x="31.838px" y="239.73px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">in computers, communications,</text>
+            <text x="31.838px" y="252.122px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">and many other types of</text>
+            <text x="31.838px" y="264.515px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">systems</text>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-229.175,20.1933)">
+        <text x="533.825px" y="36.536px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Fetch</text>
+        <text x="565.829px" y="36.536px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">: <tspan x="572.28px 579.61px " y="36.536px 36.536px ">Th</tspan>e CPU retrieves the instruction from main memory (RAM).</text>
+        <text x="533.825px" y="57.928px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Decode</text>
+        <text x="577.173px" y="57.928px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">: <tspan x="583.624px 590.954px " y="57.928px 57.928px ">Th</tspan>e Control Unit interprets the fetched instruction to determine the required</text>
+        <text x="533.825px" y="70.321px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">operation.</text>
+        <text x="533.825px" y="91.713px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Execute</text>
+        <text x="579.85px" y="91.713px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">: <tspan x="586.301px 593.631px " y="91.713px 91.713px ">Th</tspan>e CPU performs the operation using the appropriate hardware components such</text>
+        <text x="533.825px" y="104.106px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">as the <tspan x="569.186px 577.19px " y="104.106px 104.106px ">AL</tspan>U.</text>
+        <text x="533.825px" y="125.499px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Store</text>
+        <text x="564.499px" y="125.499px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">: <tspan x="570.95px 578.28px " y="125.499px 125.499px ">Th</tspan>e result of the executed instruction is written back to memory or a register<tspan x="973.794px " y="125.499px ">.</tspan></text>
+    </g>
+    <g transform="matrix(1,0,0,1,-2.06514,18.8141)">
+        <text x="18.443px" y="24.418px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">The</text>
+        <text x="42.454px" y="24.418px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">control unit</text>
+        <text x="111.777px" y="24.418px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">(CU) is a component of a</text>
+        <text x="18.443px" y="36.81px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">computer&apos;s central processing unit (CPU) that</text>
+        <text x="18.443px" y="49.203px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">directs the operation of the processor<tspan x="215.892px 219.226px 221.898px 229.24px 232.574px " y="49.203px 49.203px 49.203px 49.203px 49.203px ">. A C</tspan>U</text>
+        <text x="18.443px" y="61.595px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">typically uses a binary decoder to convert coded</text>
+        <text x="18.443px" y="73.988px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">instructions into timing and control signals that</text>
+        <text x="18.443px" y="86.38px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">direct the operation of the other units (memory<tspan x="263.675px " y="86.38px ">,</tspan></text>
+        <text x="18.443px" y="98.773px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">arithmetic logic unit and input and output</text>
+        <text x="18.443px" y="111.166px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">devices, etc.).</text>
+        <text x="18.443px" y="135.558px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">Most computer resources are managed by the</text>
+        <text x="18.443px" y="147.951px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">CU. It directs the ﬂow of data between the CPU</text>
+        <text x="18.443px" y="160.343px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">and the other devices. In modern computer</text>
+        <text x="18.443px" y="172.736px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">designs, the control unit is typically an internal</text>
+        <text x="18.443px" y="185.129px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">part of the CPU with its overall role and</text>
+        <text x="18.443px" y="197.521px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">operation unchanged since its introduction.</text>
+    </g>
+    <g transform="matrix(1,0,0,1,8.1882,9.24907)">
+        <text x="14.512px" y="439.959px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">A</text>
+        <text x="25.188px" y="439.959px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">bus</text>
+        <text x="49.856px" y="439.959px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">is a communication system that transfers data</text>
+        <text x="14.512px" y="452.351px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">between components inside a computer or between</text>
+        <text x="14.512px" y="464.744px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">computers. It encompasses both hardware (e.g., wires,</text>
+        <text x="14.512px" y="477.136px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">optical ﬁber<tspan x="75.216px 78.55px " y="477.136px 477.136px ">, </tspan>bus slots) and software, including</text>
+        <text x="14.512px" y="489.529px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">communication protocols. <tspan x="153.245px 161.249px " y="489.529px 489.529px ">At</tspan> its core, a bus is a shared</text>
+        <text x="14.512px" y="501.922px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:12px;">physical</text>
+        <text x="61.2px" y="501.922px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">pathway<tspan x="105.005px 108.339px " y="501.922px 501.922px ">, </tspan>typically composed of</text>
+        <text x="229.727px" y="501.922px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:12px;">wires</text>
+        <text x="261.063px" y="501.922px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">or</text>
+        <text x="275.067px" y="501.922px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:12px;">traces</text>
+        <text x="311.079px" y="501.922px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">on</text>
+        <text x="14.512px" y="514.314px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">a circuit board, that allows multiple devices to</text>
+        <text x="14.512px" y="526.707px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">communicate. Unlike networks which route addressed</text>
+        <text x="14.512px" y="539.099px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">packets across switches, buses use</text>
+        <text x="208.598px" y="539.099px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:12px;">arbitration protocols</text>
+        <text x="14.512px" y="551.492px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">to manage which device can transmit data over the</text>
+        <text x="14.512px" y="563.884px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">shared pathway<tspan x="98.343px " y="563.884px ">.</tspan></text>
+    </g>
+    <g transform="matrix(1,0,0,1,169.672,328.335)">
+        <text x="533.825px" y="36.536px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Cache memory</text>
+        <text x="619.864px" y="36.536px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">, being located</text>
+        <text x="701.256px" y="36.536px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:12px;">within</text>
+        <text x="735.27px" y="36.536px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">the</text>
+        <text x="533.825px" y="48.928px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">CPU, is even closer and faster than random</text>
+        <text x="533.825px" y="61.321px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">access memory<tspan x="616.952px " y="61.321px ">.</tspan></text>
+    </g>
+    <g transform="matrix(1,0,0,1,112.536,-23)">
+        <text x="238.232px" y="50.697px" style="font-family:'DejaVuSerif-Bold', 'DejaVu Serif', serif;font-weight:700;font-size:24px;">Central Processing Unit</text>
+    </g>
+    <g transform="matrix(0.843821,0,0,1.17165,-0.990517,89.1818)">
+        <g transform="matrix(1,0,0,0.886222,-719.911,70.1424)">
+            <rect x="740.256" y="57.981" width="239.743" height="150.848" style="fill:rgb(81,85,22);"/>
+        </g>
+        <g transform="matrix(1.18509,0,0,0.853496,-859.077,73.5926)">
+            <text x="751.901px" y="77.175px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">A<tspan x="759.243px 762.577px " y="77.175px 77.175px "> c</tspan>lock generator is an</text>
+            <text x="751.901px" y="89.567px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">electronic oscillator that</text>
+            <text x="751.901px" y="101.96px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">produces a clock signal for use</text>
+            <text x="751.901px" y="114.352px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">in synchronizing a circuit&apos;s</text>
+            <text x="751.901px" y="126.745px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">operation. <tspan x="808.392px 815.722px " y="126.745px 126.745px ">Th</tspan>e output clock</text>
+            <text x="751.901px" y="139.138px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">signal can range from a simple</text>
+            <text x="751.901px" y="151.53px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">symmetrical square wave to</text>
+            <text x="751.901px" y="163.923px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">more complex arrangements.</text>
+            <text x="751.901px" y="176.315px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">The basic parts that all clock</text>
+            <text x="751.901px" y="188.708px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">generators share are a resonant</text>
+            <text x="751.901px" y="201.101px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(151,207,238);">circuit and an ampliﬁer<tspan x="871.292px " y="201.101px ">.</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-553.599,-0.246001)">
+        <text x="677.142px" y="407.229px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;">Registers</text>
+        <text x="735.168px" y="407.229px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">are small, fast storage locations used for</text>
+        <text x="725.148px" y="419.622px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">temporary data storage during processing.</text>
+    </g>
+    <path d="M410.477,412.142C410.477,436.511 412.232,465.594 402.886,488.134C400.652,493.521 391.468,508.444 384.273,508.444" style="fill:none;stroke:rgb(229,200,17);stroke-width:4.5px;"/>
+    <path d="M427.548,447.175C430.18,448.02 428.719,453.453 429.084,455.64C430.492,464.089 429.86,473.057 429.86,481.712C429.86,504.071 430.769,534.66 411.821,550.971C401.747,559.643 385.249,563.398 372.433,563.398C370.646,563.398 358.111,563.674 358.111,562.874" style="fill:none;stroke:rgb(229,200,17);stroke-width:4.5px;"/>
+    <path d="M463.312,464.569C463.312,489.87 462.659,515.822 460.146,540.95C459.79,544.513 456.22,567.95 457.372,571.304C458.238,573.826 469.072,575.013 471.065,575.654C486.109,580.496 503.422,578.898 519.285,578.898C532.978,578.898 546.9,578.511 560.46,578.511" style="fill:none;stroke:rgb(229,200,17);stroke-width:4.5px;"/>
+    <path d="M507.41,467.294C507.41,483.185 506.362,499.518 508.099,515.353C508.554,519.501 507.011,524.856 508.704,528.717C510.914,533.759 505.96,543.487 512.799,546.711C521.138,550.643 545.964,550.291 556.66,550.291L588.496,550.291" style="fill:none;stroke:rgb(229,200,17);stroke-width:4.5px;"/>
+    <g transform="matrix(1,0,0,1,16.2047,-3.16693)">
+        <text x="349.849px" y="530.463px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">Buses</text>
+    </g>
+    <g transform="matrix(1,0,0,1,173.106,-24.6499)">
+        <text x="349.849px" y="530.463px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">Buses</text>
+    </g>
+</svg>
