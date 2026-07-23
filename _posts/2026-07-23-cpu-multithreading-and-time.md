@@ -15,6 +15,10 @@ But I bet you could tax the processing with Python and monitor it that way. So I
 
 ![terminal output](/images/posts/cpu-and-time.png)
 
+And on MacOS there is the lovely activity monitor CPU window:
+
+![activity monitor CPU monitor](/images/posts/activitymonitor.png)
+
 ### Here's the code
 
 (hint) you will need to `pip install psutil` ([docs](https://psutil.readthedocs.io/stable/)), likely in a virtual environment (`python -m venv somedir` and then (in Linux type os) `source somedir/bin/activate`).
