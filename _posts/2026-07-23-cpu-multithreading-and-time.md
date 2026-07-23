@@ -13,7 +13,7 @@ CompTIA called it a Capstone project: opening and closing a bunch of application
 
 But I bet you could tax the processing with Python and monitor it that way. So I found this cool [starting point](https://medium.com/@shane-zhang/demystifying-python-concurrency-io-bound-vs-cpu-bound-tasks-64016db696c7) and adapted it to give output like this:
 
-![terminal output](/images/posts/cpu-and-time.png)
+![terminal output](/images/posts/cpu-and-time-terminal.png)
 
 And on MacOS there is the lovely activity monitor CPU window:
 

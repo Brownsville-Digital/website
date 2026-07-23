@@ -49,6 +49,11 @@ h3 {
   font-weight: 700;
 }
 
+img {
+  max-width: 90%;
+  height: auto;
+}
+
 body.hero h2,
 body.hero h3 {
   text-align: center;
